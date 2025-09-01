@@ -32,7 +32,7 @@
         </section>
         <!-- Mobile Brand Logo -->
         <div class="xl:hidden">
-            <a class="hidden dark:block w-32 flex_center overflow-hidden" href="{{ __url('/') }}">
+            <a class="hidden dark:block w-32 h-6 flex_center overflow-hidden" href="{{ __url('/') }}">
                 <img src="{{ app_setting()->footer_logo }}" alt="Brand logo dark" />
             </a>
             <a class="dark:hidden w-32 h-6 flex_center overflow-hidden" href="{{ __url('/') }}">
