@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+                xmlns:admin="http://webns.net/mvcb/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:content="http://purl.org/rss/1.0/modules/content/"
+                xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Trust News RSS Feed (en)</title>
+<link>http://localhost/trust</link>
+<atom:link href="http://localhost/trust/rss/en.xml" rel="self" type="application/rss+xml" />
+<description>Latest news from Trust News (en)</description>
+<language>en</language>
+<copyright>Copyright 2025 Trust News</copyright>
+<lastBuildDate>Mon, 01 Sep 2025 17:53:32 +0600</lastBuildDate>
+<pubDate>Mon, 01 Sep 2025 17:53:32 +0600</pubDate>
+<image>
+<title>Trust News RSS Feed</title>
+<url>http://localhost/trust/storage/application/1756705274-logo.png</url>
+<link>http://localhost/trust</link>
+</image>
+<item>
+<title>this is my post 6 this is my post 6</title>
+<link>http://localhost/trust/thisismypost6thisismypost6/</link>
+<guid isPermaLink="true">http://localhost/trust/thisismypost6thisismypost6/</guid>
+<atom:link href="http://localhost/trust/thisismypost6thisismypost6/" rel="standout" />
+<description><![CDATA[this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post 6 this is my post...]]></description>
+<enclosure url="http://localhost/trust/storage/uploads/photo-library/large_1756726654-photo.png" length="0" type="image/jpeg" />
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 05:53:32 +0600</pubDate>
+<category>Crime</category>
+</item>
+<item>
+<title>This is my post 5vvvvvvvvvvvvv</title>
+<link>http://localhost/trust/this-is-my-post-5vvvvvvvvvvvvv/</link>
+<guid isPermaLink="true">http://localhost/trust/this-is-my-post-5vvvvvvvvvvvvv/</guid>
+<atom:link href="http://localhost/trust/this-is-my-post-5vvvvvvvvvvvvv/" rel="standout" />
+<description><![CDATA[vvvvvvvvvvvvvvvvvvThis is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 02:33:42 +0600</pubDate>
+<category>International</category>
+</item>
+<item>
+<title>This is my post 5This is my post 5</title>
+<link>http://localhost/trust/this-is-my-post-5this-is-my-post-5/</link>
+<guid isPermaLink="true">http://localhost/trust/this-is-my-post-5this-is-my-post-5/</guid>
+<atom:link href="http://localhost/trust/this-is-my-post-5this-is-my-post-5/" rel="standout" />
+<description><![CDATA[This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my post 5This is my p...]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 02:31:21 +0600</pubDate>
+<category>Travel</category>
+</item>
+<item>
+<title>This is my post 4</title>
+<link>http://localhost/trust/this-is-my-post-4/</link>
+<guid isPermaLink="true">http://localhost/trust/this-is-my-post-4/</guid>
+<atom:link href="http://localhost/trust/this-is-my-post-4/" rel="standout" />
+<description><![CDATA[This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my post 4This is my p...]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 02:28:48 +0600</pubDate>
+<category>International</category>
+</item>
+<item>
+<title>Hello post 3 Hello post 3</title>
+<link>http://localhost/trust/hello-post-3-hello-post-3/</link>
+<guid isPermaLink="true">http://localhost/trust/hello-post-3-hello-post-3/</guid>
+<atom:link href="http://localhost/trust/hello-post-3-hello-post-3/" rel="standout" />
+<description><![CDATA[Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post 3Hello post...]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 01:10:34 +0600</pubDate>
+<category>International</category>
+</item>
+<item>
+<title>Head Line post 2</title>
+<link>http://localhost/trust/headlinepost2/</link>
+<guid isPermaLink="true">http://localhost/trust/headlinepost2/</guid>
+<atom:link href="http://localhost/trust/headlinepost2/" rel="standout" />
+<description><![CDATA[No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No response.No respons...]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 01:07:44 +0600</pubDate>
+<category>Travel</category>
+</item>
+<item>
+<title>vbhfcghf hfdghfdghfdgh fdghfdgh</title>
+<link>http://localhost/trust/vbhfcghf-hfdghfdghfdgh-fdghfdgh/</link>
+<guid isPermaLink="true">http://localhost/trust/vbhfcghf-hfdghfdghfdgh-fdghfdgh/</guid>
+<atom:link href="http://localhost/trust/vbhfcghf-hfdghfdghfdgh-fdghfdgh/" rel="standout" />
+<description><![CDATA[vbhfcghf hfdghfdghfdgh fdghfdghvbhfcghf hfdghfdghfdgh fdghfdghvbhfcghf hfdghfdghfdgh fdghfdghvbhfcghf hfdghfdghfdgh fdghfdgh]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Mon, 01 Sep 2025 11:00:58 +0600</pubDate>
+<category>Travel</category>
+</item>
+</channel>
+</rss>

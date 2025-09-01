@@ -1,0 +1,11 @@
+{
+    "name": "Poll",
+    "alias": "poll",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Poll\\Providers\\PollServiceProvider"
+    ],
+    "files": []
+}

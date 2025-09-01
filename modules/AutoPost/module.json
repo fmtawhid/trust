@@ -1,0 +1,11 @@
+{
+    "name": "AutoPost",
+    "alias": "autopost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AutoPost\\Providers\\AutoPostServiceProvider"
+    ],
+    "files": []
+}
