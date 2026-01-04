@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+                xmlns:admin="http://webns.net/mvcb/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:content="http://purl.org/rss/1.0/modules/content/"
+                xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Trust News RSS Feed (ar)</title>
+<link>https://trustnews.press</link>
+<atom:link href="https://trustnews.press/rss/ar.xml" rel="self" type="application/rss+xml" />
+<description>Latest news from Trust News (ar)</description>
+<language>ar</language>
+<copyright>Copyright 2025 Trust News</copyright>
+<lastBuildDate>Wed, 24 Dec 2025 10:36:29 +0600</lastBuildDate>
+<pubDate>Wed, 24 Dec 2025 10:36:29 +0600</pubDate>
+<image>
+<title>Trust News RSS Feed</title>
+<url>https://trustnews.press/storage/application/1756705274-logo.png</url>
+<link>https://trustnews.press</link>
+</image>
+</channel>
+</rss>

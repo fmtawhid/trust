@@ -1,0 +1,11 @@
+{
+    "name": "VideoNews",
+    "alias": "videonews",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\VideoNews\\Providers\\VideoNewsServiceProvider"
+    ],
+    "files": []
+}
