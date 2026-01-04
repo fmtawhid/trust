@@ -5,7 +5,6 @@
 
 @section('setting_content')
 
-
     <!--/.Content Header (Page header)-->
     <div class="body-content pt-0">
         <div class="row">
@@ -28,10 +27,14 @@
                                     @input(['input_name' => 'protocol', 'value' => @$mail->protocol])
                                     @input(['input_name' => 'smtp_port', 'value' => @$mail->smtp_port])
                                     @input(['input_name' => 'smtp_pass', 'value' => @$mail->smtp_pass])
+                                    {{-- New field: From Address --}}
+                                    @input(['input_name' => 'from_address', 'value' => @$mail->from_address, 'label' => localize('From Address')])
                                 </div>
                                 <div class="col-md-6">
                                     @input(['input_name' => 'smtp_host', 'value' => @$mail->smtp_host])
                                     @input(['input_name' => 'smtp_user', 'value' => @$mail->smtp_user])
+                                    {{-- New field: From Name --}}
+                                    @input(['input_name' => 'from_name', 'value' => @$mail->from_name, 'label' => localize('From Name')])
                                     <div class="form-group mb-2 mx-0 row">
                                         <label class="col-sm-3 col-form-label ps-0">{{ localize('mail_type') }}<span
                                                 class="text-danger">*</span></label>

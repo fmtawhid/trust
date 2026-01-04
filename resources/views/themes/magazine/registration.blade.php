@@ -27,7 +27,7 @@
 
                 <div class="space-y-4">
                     <!-- Social Login Buttons -->
-                    <a href="{{ route('connect-with-facebook') }}"
+                    <!-- <a href="{{ route('connect-with-facebook') }}"
                         class="flex items-center justify-center p-3 bg-blue-600 text-white gap-3 rounded-md hover:bg-blue-700 transition-colors">
                         <svg width="24" height="24" viewBox="0 0 14222 14222">
                             <circle cx="7111" cy="7112" r="7111" fill="#ffffff"></circle>
@@ -36,7 +36,7 @@
                                 fill="#1877f2"></path>
                         </svg>
                         <span>{{ localize('connect_with_facebook') }}</span>
-                    </a>
+                    </a> -->
 
                     <a href="{{ route('connect-with-google') }}"
                         class="flex items-center justify-center p-3 bg-neutral-100 dark:bg-neutral-700 text-neutral-800 dark:text-white gap-3 rounded-md hover:bg-neutral-200 dark:hover:bg-neutral-600 transition-colors">

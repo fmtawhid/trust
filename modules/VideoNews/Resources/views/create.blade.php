@@ -209,7 +209,7 @@
                                             </label>
                                     
                                             <input type="file" class="form-control" id="video" name="video"
-                                                accept="video/*" autocomplete="off">
+                                                accept="video/*" autocomplete="off" disabled>
 
                                             <small id="videoHelp" class="text-muted mt-2">
                                                 <!-- Local video preview -->

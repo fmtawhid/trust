@@ -228,7 +228,7 @@
                                                 {{ localize('video') }}
                                             </label>
                                         
-                                            <input type="file" class="form-control" id="video" name="video" accept="video/*" autocomplete="off">
+                                            <input type="file" class="form-control" id="video" name="video" accept="video/*" autocomplete="off" disabled>
                                         
                                             <div class="position-relative mt-2" id="videoContainer" style="width: 100%; height: auto;">
                                                 {{-- Delete Button --}}
