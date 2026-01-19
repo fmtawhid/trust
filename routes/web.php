@@ -22,16 +22,6 @@ use App\Http\Controllers\Website\NewsCommentReplyController;
 use App\Http\Controllers\Website\HomeController as WebsiteHomeController;
 
 // Sitemap Routes
-// Main Sitemap Index
-Route::get('sitemap.xml', function () {
-    $file = public_path("sitemap.xml");
-    if (file_exists($file)) {
-        return response()->file($file, ['Content-Type' => 'application/xml']);
-    }
-    abort(404);
-});
-
-// Language-Specific Sitemaps
 Route::get('sitemap/{lang}.xml', function ($lang) {
     $file = public_path("sitemap/{$lang}.xml");
     if (file_exists($file)) {

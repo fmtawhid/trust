@@ -183,8 +183,8 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
         const ajaxPollResultUrl = "{{ route('ajax.poll.result', ['poll' => '__POLL_ID__']) }}";
     </script>
 
-    {{-- ✅ jQuery - Defer (Non-blocking) --}}
-    <script defer src="{{ asset('website/js/jquery-3.7.1.min.js') }}"></script>
+    {{-- ✅ jQuery - NO DEFER (Must load before other scripts) --}}
+    <script src="{{ asset('website/js/jquery-3.7.1.min.js') }}"></script>
 
     {{-- ✅ Page Loader Script - Critical (No defer) --}}
     <script>
@@ -204,7 +204,7 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
     </script>
     {{-- ✅ Page Loader Script End --}}
 
-    {{-- ✅ Theme Scripts - Deferred for Better Performance --}}
+    {{-- ✅ Theme Scripts - Deferred for Better Performance (jQuery already loaded) --}}
     <script defer src="{{ \App\Helpers\ThemeHelper::asset('plugins/swiper/js/swiper-bundle.min.js') }}"></script>
     <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/website.js?v=5') }}"></script>
     <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/global-tab.js') }}"></script>
