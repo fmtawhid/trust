@@ -13,6 +13,9 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
 
     {!! SEOTools::generate() !!}
 
+    <!-- Canonical URL for SEO (Prevents Duplicate Content) -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="{{ \App\Helpers\ThemeHelper::asset('plugins/swiper/css/swiper-bundle.min.css') }}" />
 
