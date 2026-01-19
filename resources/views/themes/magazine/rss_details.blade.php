@@ -91,7 +91,7 @@
                     {!! $ad->embed_code !!}
                 @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}"
-                        alt="" />
+                        alt="RSS Details Banner Trust News" />
                 @endif
             </figure>
 
@@ -122,7 +122,7 @@
                     {!! $ad->embed_code !!}
                 @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic.png') }}"
-                        alt="" />
+                        alt="Ads Image Trust News" />
                 @endif
             </figure>
 
@@ -131,7 +131,7 @@
                     {!! $ad->embed_code !!}
                 @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-large.png') }}"
-                        alt="" />
+                        alt="Ads Image Trust News" />
                 @endif
             </figure>
 

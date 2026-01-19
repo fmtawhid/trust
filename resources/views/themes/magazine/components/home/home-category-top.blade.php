@@ -26,7 +26,7 @@
                         : asset('assets/news-details-view.png')
                 )
         }}"
-        alt="{{ $homePageTopNews[0]->news->image_alt ?? 'News Image' }}"
+        alt="{{ $homePageTopNews[0]->news->image_alt ?? $homePageTopNews[0]->news->title }}"
     />
 </a>
 

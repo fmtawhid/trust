@@ -5,7 +5,7 @@
     <img
       class="w-full h-full object-cover group-hover:scale-105 transition_5"
       src="{{ isset($news->photoLibrary->image_base_url) ? $news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-      alt="{{ $news->image_alt }}"
+      alt="{{ $news->image_alt ?? $news->title }}"
     />
   </a>
   <div class="col-span-3 space-y-2">

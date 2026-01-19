@@ -468,7 +468,7 @@ img {
                 {{-- testing code 2  --}}
 
                 {{-- <figure class="mb-8">
-  <img class="w-full max-h-[550px]" src="{{ $src }}" alt="{{ $newsDetail->image_alt ?? 'News Image' }}">
+  <img class="w-full max-h-[550px]" src="{{ $src }}" alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}">
                 <figcaption class="mt-2 text-sm text-gray-500 dark:text-gray-400 italic text-center">
                     {{ $newsDetail->image_title }}
                 </figcaption>
@@ -510,7 +510,7 @@ img {
 
                     <img class="w-full h-auto max-h-[550px] object-contain block relative z-1"
                         src="{{ $src }}"
-                        alt="{{ $newsDetail->image_alt ?? 'News Image' }}">
+                        alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}" />
 
 
 
@@ -579,7 +579,7 @@ img {
 
 <div style="position: relative; max-width: 800px; margin: 0 auto;  overflow: hidden;">
   
-    <img src="{{ $src }}" alt="News Image"
+    <img src="{{ $src }}" alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}"
                 style="width: 100%; height: auto; max-height: 500px; object-fit: cover; display: block;">
 
                 

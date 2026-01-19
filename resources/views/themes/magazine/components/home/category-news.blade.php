@@ -13,7 +13,7 @@
                 <img 
                     class="w-full h-full object-cover group-hover:scale-105 transition_slow" 
                     src="{{ isset($ctgNewsSections[0]->news->photoLibrary->image_base_url) ? $ctgNewsSections[0]->news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}" 
-                    alt="{{ $ctgNewsSections[0]->news->image_alt }}" />
+                    alt="{{ $ctgNewsSections[0]->news->image_alt ?? $ctgNewsSections[0]->news->title }}" />
             </a>
             <div class="p-2 space-y-3">
                 <a 

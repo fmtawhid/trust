@@ -1,13 +1,20 @@
 <x-web-layout>
+    {{-- Define locale variable first --}}
+    @php
+    $locale = app()->getLocale();
+    @endphp
 
-
+    <!-- SEO H1 Tag for Homepage -->
+    <h1 class="sr-only">
+        {{ $locale === 'bn'
+            ? 'ট্রাস্ট নিউজ - বাংলাদেশের শীর্ষ অনলাইন নিউজ পোর্টাল, সর্বশেষ খবর ও আপডেট'
+            : 'Trust News - Bangladesh\'s Leading Online News Portal, Latest News & Updates' }}
+    </h1>
 
     {{-- php code for news ticker end  --}}
 
-
     {{-- ================= News Ticker ================= --}}
     @php
-    $locale = app()->getLocale();
     $languageId = $locale === 'bn' ? 3 : 1;
 
     $tickerNews = DB::table('news_msts')

@@ -33,7 +33,7 @@
                         class="block w-full h-64 group overflow-hidden">
                         <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                             src="{{ isset($secSixNewsChunk->first()->news->photoLibrary->image_base_url) ? $secSixNewsChunk->first()->news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-                            alt="{{ $secSixNewsChunk->first()->news->image_alt }}" />
+                            alt="{{ $secSixNewsChunk->first()->news->image_alt ?? $secSixNewsChunk->first()->news->title }}" />
                     </a>
                     <div class="space-y-2 divide-y divide-neutral-200 dark:divide-neutral-700">
                         <div class="py-2 space-y-2">
@@ -69,7 +69,7 @@
                                         <figure class="w-full h-20">
                                             <img class="w-full h-full object-cover"
                                                 src="{{ isset($secSixNewsChunkItem->news->photoLibrary->image_base_url) ? $secSixNewsChunkItem->news->photoLibrary->image_base_url : asset('/assets/opinion-avatar.png') }}"
-                                                alt="{{ $secSixNewsChunkItem->news->image_alt }}" />
+                                                alt="{{ $secSixNewsChunkItem->news->image_alt ?? $secSixNewsChunkItem->news->title}}" />
                                         </figure>
                                         <h2
                                             class="col-span-2 line-clamp-3 text-neutral-600 hover:text-brand-primary transition_3 dark:text-neutral-50 dark:hover:text-brand-primary">

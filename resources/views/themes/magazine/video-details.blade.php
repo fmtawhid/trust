@@ -164,7 +164,7 @@
                         {!! $ad->embed_code !!}
                     @else
                         <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic.png') }}"
-                            alt="" />
+                            alt="Banner Large Trust News" />
                     @endif
                 </figure>
 
@@ -230,7 +230,7 @@
                                             <a href="{{ __url($previous->encode_title) }}">
                                                 <figure class="w-[100px] h-16 overflow-hidden">
                                                     <img class="w-full h-full object-cover" src="{{ $previousSrc }}"
-                                                        alt="" />
+                                                        alt="{{ $previous->image_alt ?? $previous->title }}" />
                                                 </figure>
                                             </a>
 
@@ -273,7 +273,7 @@
                                             <a href="{{ __url($next->encode_title) }}">
                                                 <figure class="w-[100px] h-16 overflow-hidden">
                                                     <img class="w-full h-full object-cover" src="{{ $nextSrc }}"
-                                                        alt="" />
+                                                        alt="{{ $next->image_alt ?? $next->title }}" />
                                                 </figure>
                                             </a>
 
@@ -297,7 +297,7 @@
                     {!! $ad->embed_code !!}
                 @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}"
-                        alt="" />
+                        alt="Ads Banner Trust News" />
                 @endif
             </figure>
 
@@ -334,7 +334,7 @@
                                     class="block w-full h-64 group overflow-hidden">
                                     <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                         src="{{ $recentPost->first()->thumbnail_image ? asset('storage/' . $recentPost->first()->thumbnail_image) : asset('/assets/thumbnail-image.jpg') }}"
-                                        alt="{{ $recentPost->first()->image_alt }}" />
+                                        alt="{{ $recentPost->first()->image_alt ?? $recentPost->first()->title}}" />
                                 </a>
                                 <div class="space-y-2 divide-y divide-neutral-200 dark:divide-neutral-700">
                                     <div class="py-2 space-y-2">
@@ -410,7 +410,7 @@
                         {!! $ad->embed_code !!}
                     @else
                         <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-medium.png') }}"
-                            alt="" />
+                            alt="Ads Banner Trust News" />
                     @endif
                 </figure>
 

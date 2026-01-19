@@ -12,7 +12,7 @@
             <img
                 class="w-full h-72 object-cover"
                 src="{{ isset($cardNewsSections[0]->news->photoLibrary->image_base_url) ? $cardNewsSections[0]->news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-                alt="{{ $cardNewsSections[0]->news->image_alt }}"
+                alt="{{ $cardNewsSections[0]->news->image_alt ?? $cardNewsSections[0]->news->title }}"
             />
         </a>
         <div class="py-3 border-b space-y-3">

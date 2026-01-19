@@ -32,7 +32,7 @@
                 <!-- Author Info -->
                 <div class="flex items-center space-x-4 mt-3">
                     <!-- Avatar -->
-                    <img src="{{ get_image_url('/assets/default.jpg', $opinion->person_image) }}" alt=""
+                    <img src="{{ get_image_url('/assets/default.jpg', $opinion->person_image) }}" alt="Author Image Trust News"
                         class="w-12 h-12 rounded-full object-cover border shadow-sm" />
 
                     <!-- Author Details -->
@@ -65,7 +65,7 @@
 
             @if ($opinion->news_image)
                 <div class="my-4">
-                    <img src="{{ asset('storage/' . $opinion->news_image) }}" alt="{{ $opinion->image_alt }}"
+                    <img src="{{ asset('storage/' . $opinion->news_image) }}" alt="{{ $opinion->image_alt ?? 'Opinion Image Trust News' }}"
                         class="w-full max-h-[550px]" />
 
                     @if (!empty($opinion->image_title))

@@ -7,7 +7,7 @@
                 <figure class="relative w-full h-56 group overflow-hidden block">
                     <img class="w-full h-full object-cover group-hover:scale-105 transition_slow"
                         src="{{ get_image_url('/assets/thumbnail-image.jpg', $videoNewsItem->thumbnail_image) }}"
-                        alt="{{ $videoNewsItem->image_alt }}" loading="lazy" />
+                        alt="{{ $videoNewsItem->image_alt ?? $videoNewsItem->title }}" loading="lazy" />
 
                     <!-- Play button -->
                     <a href="{{ __url($videoNewsItem->encode_title) }}" aria-label="Play video"

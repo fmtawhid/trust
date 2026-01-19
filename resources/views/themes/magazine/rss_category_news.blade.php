@@ -63,7 +63,7 @@
                                         class="block w-full h-42 md:h-[150px] 2xl:h-40 4xl:h-52 group overflow-hidden">
                                         <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                             src="{{ isset($item['image']) ? $item['image'] : asset('/assets/news-card-view.png') }}"
-                                            alt="{{ $item['title'] }}" />
+                                            alt="{{ $item['title'] ?? 'Rss Feed Trust News'}}" />
                                     </a>
                                     <div class="py-3 space-y-2">
                                         <a href="{{ __url($item['encode_title']) }}"
@@ -99,7 +99,7 @@
                                     class="block w-full h-20 xl:h-28 2xl:h-36 group overflow-hidden">
                                     <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                         src="{{ isset($item['image']) ? $item['image'] : asset('/assets/news-card-view.png') }}"
-                                        alt="{{ $item['title'] }}" />
+                                        alt="{{ $item['title'] ?? 'Rss Feed Trust News' }}" />
                                 </a>
                                 <div class="col-span-3 space-y-2">
                                     <a href="{{ __url($item['encode_title']) }}"
@@ -132,7 +132,7 @@
                         {!! $ad->embed_code !!}
                     @else
                         <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}"
-                            alt="" />
+                            alt="Banner Large Trust News" />
                     @endif
                 </figure>
             @endif
@@ -150,7 +150,7 @@
                         {!! $ad->embed_code !!}
                     @else
                         <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic.png') }}"
-                            alt="" />
+                            alt="Ads Image Trust News" />
                     @endif
                 </figure>
 

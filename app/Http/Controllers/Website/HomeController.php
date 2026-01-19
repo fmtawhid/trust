@@ -45,12 +45,20 @@ class HomeController extends Controller
      */
     public function index($language='')
     {
+        $locale = app()->getLocale();
         $metaData = Setting::select('details')->where('event','meta')->first();
         $metaInfo = json_decode($metaData->details);
 
-        $title = $metaInfo->title ?? 'News365';
-        $description = $metaInfo->meta_description ?? '';
-        $metaKeywords = $metaInfo->meta_tag ?? '';
+        // Optimized defaults with primary keywords for SEO
+        if ($locale === 'bn') {
+            $title = $metaInfo->title ?? 'ট্রাস্ট নিউজ - বাংলাদেশের শীর্ষ অনলাইন নিউজ পোর্টাল';
+            $description = $metaInfo->meta_description ?? 'ট্রাস্ট নিউজে পান বাংলাদেশ ও আন্তর্জাতিক সর্বশেষ খবর, রাজনীতি, ব্যবসা, প্রযুক্তি, বিনোদন এবং আরও অনেক কিছু। বিশ্বস্ত সংবাদের জন্য আমাদের অনুসরণ করুন।';
+            $metaKeywords = $metaInfo->meta_tag ?? 'বাংলাদেশ খবর, সর্বশেষ সংবাদ, বাংলা নিউজ, ট্রাস্ট নিউজ, আন্তর্জাতিক খবর, রাজনীতি, ব্যবসা, খেলাধুলা, বিনোদন';
+        } else {
+            $title = $metaInfo->title ?? 'Trust News - Bangladesh\'s Leading Online News Portal';
+            $description = $metaInfo->meta_description ?? 'Get the latest Bangladesh and international news, politics, business, technology, sports and entertainment on Trust News. Your trusted source for credible and reliable news coverage with in-depth analysis.';
+            $metaKeywords = $metaInfo->meta_tag ?? 'Trust News, Bangladesh News, Online News Portal, Latest News, Breaking News, Politics, Business, Technology, Entertainment, Sports';
+        }
 
         SEOTools::setTitle($title);
         SEOMeta::addKeyword($metaKeywords);

@@ -14,7 +14,7 @@
                 <figure class="w-full h-20 md:h-24 lg:h-28 xl:h-20 objext-cover">
                     <img class="w-full h-full object-cover"
                         src="{{ isset($latestNewsItem->photoLibrary->image_base_url) ? $latestNewsItem->photoLibrary->image_base_url : asset('/assets/opinion-avatar.png') }}"
-                        alt="{{ $latestNewsItem->image_alt }}" />
+                        alt="{{ $latestNewsItem->image_alt ?? $latestNewsItem->title}}" />
                 </figure>
             </div>
             <hr class="h-px last:hidden bg-neutral-200 border-0 dark:bg-neutral-700" />

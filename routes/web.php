@@ -21,6 +21,16 @@ use App\Http\Controllers\Website\ForgotPasswordController;
 use App\Http\Controllers\Website\NewsCommentReplyController;
 use App\Http\Controllers\Website\HomeController as WebsiteHomeController;
 
+// Sitemap Routes
+Route::get('sitemap/{lang}.xml', function ($lang) {
+    $file = public_path("sitemap/{$lang}.xml");
+    if (file_exists($file)) {
+        return response()->file($file, ['Content-Type' => 'application/xml']);
+    }
+    abort(404);
+})->where('lang', '[a-z]{2}');
+
+
 
 
 
@@ -182,6 +192,7 @@ Route::prefix('webuser')->name('webuser.')->group(function () {
     Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
     Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
 });
+
 
 
 

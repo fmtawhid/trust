@@ -56,7 +56,7 @@
                 {!! $ad->embed_code !!}
             @else
                 <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}"
-                    alt="" />
+                    alt="Ads Banner Trust News" />
             @endif
         </figure>
 

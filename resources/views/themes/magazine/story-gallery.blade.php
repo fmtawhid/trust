@@ -34,7 +34,7 @@
                         <div class="main_image_container relative">
                             <div class="slide bg_gradient_top" data-timeout="2000">
                                 <img src="{{ $stories->image_path ? asset('storage/' . $stories->image_path) : asset('assets/story-blank.png') }}"
-                                    alt="Story" title="{{ $stories->title }}" />
+                                    alt="{{ $stories->title }}" title="{{ $stories->title }}" />
                             </div>
                             <div
                                 class="inner_text_content absolute left-1/2 -translate-x-1/2 w-full p-4 space-y-4 text-center">

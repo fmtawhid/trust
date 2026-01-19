@@ -4,7 +4,7 @@
         <a href="{{ __url($topWeekNews[0]->encode_title) }}" class="bg_gradient_top block h-[289px]">
             <img class="w-full h-full object-cover"
                 src="{{ isset($topWeekNews[0]->photoLibrary->image_base_url) ? $topWeekNews[0]->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-                alt="{{ $topWeekNews[0]->image_alt }}" />
+                alt="{{ $topWeekNews[0]->image_alt ?? $topWeekNews[0]->title }}" />
 
             <div class="p-2 2xl:p-3 absolute z-10 bottom-0 left-0">
                 <div
@@ -39,7 +39,7 @@
                     <figure class="w-full h-20">
                         <img class="w-full h-full object-cover"
                             src="{{ isset($topWeekNewsItem->photoLibrary->image_base_url) ? $topWeekNewsItem->photoLibrary->image_base_url : asset('/assets/opinion-avatar.png') }}"
-                            alt="{{ $topWeekNewsItem->image_alt }}" />
+                            alt="{{ $topWeekNewsItem->image_alt ?? $topWeekNewsItem->title }}" />
                     </figure>
                     <a href="{{ __url($topWeekNewsItem->encode_title) }}"
                         class="col-span-2 line-clamp-3 text-neutral-600 hover:text-brand-primary transition_3 dark:text-neutral-50 dark:hover:text-brand-primary">

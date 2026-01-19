@@ -8,7 +8,7 @@
                 <img
                 class="w-full h-full object-cover group-hover:scale-105 transition_slow"
                 src="{{ isset($sectionTwoNews['leftNews'][0]->news->photoLibrary->image_base_url) ? $sectionTwoNews['leftNews'][0]->news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-                alt="{{ $sectionTwoNews['leftNews'][0]->news->image_alt }}"
+                alt="{{ $sectionTwoNews['leftNews'][0]->news->image_alt ?? $sectionTwoNews['leftNews'][0]->news->title }}"
                 />
             </a>
             <div class="py-3 space-y-2">
@@ -37,7 +37,7 @@
                 <img
                 class="w-full h-full object-cover group-hover:scale-105 transition_slow"
                 src="{{ isset($sectionTwoNews['rightNews'][0]->news->photoLibrary->image_base_url) ? $sectionTwoNews['rightNews'][0]->news->photoLibrary->image_base_url : asset('/assets/news-card-view.png') }}"
-                alt="{{ $sectionTwoNews['rightNews'][0]->news->image_alt }}"
+                alt="{{ $sectionTwoNews['rightNews'][0]->news->image_alt ?? $sectionTwoNews['rightNews'][0]->news->title }}"
                 />
             </a>
             <div class="py-3 space-y-2">

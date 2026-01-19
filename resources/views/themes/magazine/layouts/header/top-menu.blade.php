@@ -73,7 +73,7 @@
                                                                     class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                                     <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                                         src="{{ $item->photoLibrary ? $item->photoLibrary->image_base_url : asset('assets/news-card-view.png') }}"
-                                                                        alt="" />
+                                                                        alt="{{ $item->title }}" />
                                                                 </a>
                                                                 <div class="p-2 space-y-2">
                                                                     <div class="line-clamp-2">
@@ -113,7 +113,7 @@
                                                                 class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                                 <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                                     src="{{ $item->photoLibrary ? $item->photoLibrary->image_base_url : asset('assets/news-card-view.png') }}"
-                                                                    alt="" />
+                                                                    alt="{{ $item->title }}" />
                                                             </a>
                                                             <div class="p-2 space-y-2">
                                                                 <div class="line-clamp-2">
@@ -175,7 +175,7 @@
                                                 class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                 <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                     src="{{ $item->photoLibrary ? $item->photoLibrary->image_base_url : asset('assets/news-card-view.png') }}"
-                                                    alt="News" />
+                                                    alt="{{ $item->title }}" />
                                             </a>
                                             <div class="p-2 space-y-2">
                                                 <div class="line-clamp-2">
@@ -262,7 +262,7 @@
                                                                     class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                                     <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                                         src="{{ $item['image'] ? $item['image'] : asset('assets/news-card-view.png') }}"
-                                                                        alt="" />
+                                                                        alt="{{ $item['title'] }}" />
                                                                 </a>
                                                                 <div class="p-2 space-y-2">
                                                                     <div class="line-clamp-2">
@@ -296,7 +296,7 @@
                                                                 class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                                 <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                                     src="{{ $item['image'] ? $item['image'] : asset('assets/news-card-view.png') }}"
-                                                                    alt="" />
+                                                                    alt="{{ $item['title'] }}" />
                                                             </a>
                                                             <div class="p-2 space-y-2">
                                                                 <div class="line-clamp-2">
@@ -357,7 +357,7 @@
                                                 class="w-full h-36 2xl:h-48 group overflow-hidden block">
                                                 <img class="w-full h-full object-cover group-hover:scale-105 transition_5"
                                                     src="{{ $item['image'] ? $item['image'] : asset('assets/news-card-view.png') }}"
-                                                    alt="" />
+                                                    alt="{{ $item['title'] }}" />
                                             </a>
                                             <div class="p-2 space-y-2">
                                                 <div class="line-clamp-2">

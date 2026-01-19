@@ -13,7 +13,7 @@
                     <figure class="w-14 h-14 rounded-full overflow-hidden">
                         <img class="w-full h-full object-cover"
                             src="{{ $comment->user->avatar ? asset('storage/' . $comment->user->avatar) : asset('assets/opinion-avatar.png') }}"
-                            alt="" />
+                            alt=" {{ $comment->user->name ?? 'Comment Trust News'}}" />
                     </figure>
                 </div>
                 <div class="w-full">
@@ -66,7 +66,7 @@
                                     <figure class="w-14 h-14 rounded-full overflow-hidden">
                                         <img class="w-full h-full object-cover"
                                             src="{{ $reply->user->avatar ? asset('storage/' . $reply->user->avatar) : asset('assets/opinion-avatar.png') }}"
-                                            alt="" />
+                                            alt="{{ $reply->user->name ?? 'Reply Trust News' }}" />
                                     </figure>
                                 </div>
 

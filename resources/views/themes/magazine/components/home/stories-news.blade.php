@@ -17,7 +17,7 @@
                             class="bg_gradient_top block cursor-pointer w-full xl:h-80 h-72">
                             <img class="w-full h-full object-cover"
                                 src="{{ $story->latestDetail->image_path ? asset('storage/' . $story->latestDetail->image_path) : asset('assets/story-blank.png') }}"
-                                alt="Story Images" />
+                                alt="{{ $story->title }}" />
                             <div class="p-3 absolute z-10 bottom-0 left-0 space-y-2">
                                 <div class="text-white text-sm font-medium leading-5 line-clamp-3">
                                     {{ $story->title }}
