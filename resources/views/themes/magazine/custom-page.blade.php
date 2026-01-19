@@ -32,7 +32,7 @@
             @if ($page->image_id)
                 <figure class="mb-8 mt-4">
                     <img class="w-full h-full object-cover" src="{{ asset('storage/' . $page->image_id) }}"
-                        alt="" alt="" />
+                        alt="{{ $page->title }}" />
                 </figure>
             @endif
 

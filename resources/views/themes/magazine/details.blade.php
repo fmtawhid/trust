@@ -186,7 +186,7 @@ img {
                 
             </div>
             <h1>${title}</h1>
-            ${imageUrl ? `<img src="${imageUrl}" alt="News Image">` : ''}
+            ${imageUrl ? `<img src="${imageUrl}" alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}">` : ''}
             <div>${content}</div>
                 
             
@@ -452,7 +452,7 @@ img {
 
                 {{-- <img class="w-full max-h-[550px]"
                             src="{{ isset($newsDetail->photoLibrary->large_image) ? asset('storage/' . $newsDetail->photoLibrary->large_image) : asset('/assets/news-details-view.png') }}"
-                alt="{{ $newsDetail->image_alt }}" /> --}}
+                alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}" /> --}}
 
 
 
@@ -462,7 +462,7 @@ img {
      src="{{ $newsDetail->photoLibrary && $newsDetail->photoLibrary->large_image
          ? asset('storage/'.$newsDetail->photoLibrary->large_image)
          : asset('assets/news-details-view.png') }}"
-                alt="{{ $newsDetail->image_alt ?? 'News Image' }}" /> --}}
+                alt="{{ $newsDetail->image_alt ?? $newsDetail->title }}" /> --}}
 
 
                 {{-- testing code 2  --}}
@@ -682,7 +682,7 @@ img {
                     {!! $ad->embed_code !!}
                     @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic.png') }}"
-                        alt="" />
+                        alt="Ads Banner Trust News" />
                     @endif
                 </figure>
 
@@ -701,7 +701,7 @@ img {
                 {!! $ad->embed_code !!}
                 @else
                 <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}"
-                    alt="" />
+                    alt="Banner Large Trust News" />
                 @endif
             </figure>
 
@@ -715,7 +715,7 @@ img {
                     <figure class="md:w-24 md:h-24 w-16 h-16 rounded-full overflow-hidden">
                         <img class="w-full h-full object-cover"
                             src="{{ $newsDetail->reporterBy->photo ? asset('storage/' . $newsDetail->reporterBy->photo) : asset('assets/opinion-avatar.png') }}"
-                            alt="" />
+                            alt="{{ $newsDetail->reporterBy->name ?? 'Trust News'}}" />
                     </figure>
                 </div>
                 <div class="space-y-6">
@@ -765,7 +765,7 @@ img {
                     {!! $ad->embed_code !!}
                     @else
                     <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-medium.png') }}"
-                        alt="" />
+                        alt="Ads Banner Trust News" />
                     @endif
                 </figure>
             </div>

@@ -72,7 +72,7 @@
                 @if ($ad = get_advertisements(1, 1))
                 {!! $ad->embed_code !!}
                 @else
-                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="" />
+                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="Ads Image Trust News" />
                 @endif
             </figure>
 
@@ -160,7 +160,7 @@
             @if ($ad = get_advertisements(1, 3))
             {!! $ad->embed_code !!}
             @else
-            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="" />
+            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="Banner Large Trust News" />
             @endif
         </picture>
     </section>
@@ -200,7 +200,7 @@
             @if ($ad = get_advertisements(1, 4))
             {!! $ad->embed_code !!}
             @else
-            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="" />
+            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="Banner Large Trust News" />
             @endif
         </picture>
     </section>
