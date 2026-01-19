@@ -370,8 +370,17 @@ class HomeController extends Controller
         $metaData = Setting::select('details')->where('event','meta')->first();
         $metaInfo = json_decode($metaData->details);
 
-        $title = ucfirst($categorySlug) ?? $metaInfo->title ?? '';
-        $description = $data['category']->meta_description ?? $metaInfo->meta_description ?? '';
+        // Enhance title with PRIMARY keywords for better SEO (latest news, breaking news pattern)
+        $categoryName = ucfirst($categorySlug);
+        $locale = app()->getLocale();
+        
+        if ($locale === 'bn') {
+            $title = "সর্বশেষ {$categoryName} খবর | {$categoryName} নিউজ - ট্রাস্ট নিউজ";
+            $description = $data['category']->meta_description ?? "সর্বশেষ {$categoryName} সংবাদ পান ট্রাস্ট নিউজে। {$categoryName} সম্পর্কিত সব গুরুত্বপূর্ণ খবর এবং আপডেট।";
+        } else {
+            $title = "Latest {$categoryName} News | {$categoryName} Stories - Trust News";
+            $description = $data['category']->meta_description ?? "Get the latest {$categoryName} news on Trust News. Breaking stories and updates on {$categoryName} with credible reporting.";
+        }
         $metaKeywords = $data['category']->meta_keyword ?? '';
 
         SEOTools::setTitle($title);
@@ -509,9 +518,17 @@ class HomeController extends Controller
         $metaData = Setting::select('details')->where('event','meta')->first();
         $metaInfo = json_decode($metaData->details);
 
-        $title = localize('video_news');
-        $description = $metaInfo->meta_description ?? '';
-        $metaKeywords = $metaInfo->meta_tag ?? '';
+        // Enhanced title with PRIMARY keywords (video news + latest)
+        $locale = app()->getLocale();
+        if ($locale === 'bn') {
+            $title = 'সর্বশেষ ভিডিও নিউজ | ভিডিও খবর - ট্রাস্ট নিউজ';
+            $description = 'বাংলাদেশের সর্বশেষ ভিডিও খবর পান ট্রাস্ট নিউজে। ব্রেকিং নিউজ, রাজনীতি, ব্যবসা, খেলাধুলা ভিডিও কভারেজ।';
+            $metaKeywords = 'ভিডিও নিউজ, সর্বশেষ ভিডিও খবর, বাংলাদেশ ভিডিও, ট্রাস্ট নিউজ ভিডিও';
+        } else {
+            $title = 'Latest Video News | Video Stories - Trust News';
+            $description = 'Get the latest video news from Bangladesh on Trust News. Breaking video stories, news updates and coverage on politics, business, sports.';
+            $metaKeywords = 'Video News, Latest Video News, Bangladesh Videos, Trust News Videos, Breaking News Videos';
+        }
 
         SEOTools::setTitle($title);
         SEOMeta::addKeyword($metaKeywords);
