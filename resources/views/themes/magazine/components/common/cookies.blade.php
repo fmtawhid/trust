@@ -4,7 +4,7 @@
     id="cookie-banner">
     <div class="space-y-4 xl:grid items-center grid-cols-7 gap-12 p-6 md:mx-2 lg:mx-12 4xl:container 4xl:mx-auto">
         <div class="col-span-5">
-            <h1 class="text-lg font-semibold">{{ $cookieInfo->alert_title }}</h1>
+            <h2 class="text-lg font-semibold">{{ $cookieInfo->alert_title }}</h1>
             <p>{{ $cookieInfo->alert_content }}</p>
             @if ($cookieInfo->page_title)
                 <a href="{{ $cookieInfo->page_url }}" class="capitalize underline text-blue-500">{{ $cookieInfo->page_title }}</a>

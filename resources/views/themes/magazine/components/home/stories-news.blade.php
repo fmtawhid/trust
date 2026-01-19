@@ -19,9 +19,9 @@
                                 src="{{ $story->latestDetail->image_path ? asset('storage/' . $story->latestDetail->image_path) : asset('assets/story-blank.png') }}"
                                 alt="Story Images" />
                             <div class="p-3 absolute z-10 bottom-0 left-0 space-y-2">
-                                <h1 class="text-white text-sm font-medium leading-5 line-clamp-3">
+                                <div class="text-white text-sm font-medium leading-5 line-clamp-3">
                                     {{ $story->title }}
-                                </h1>
+                                </div>
                                 <div class="text-white capitalize flex items-center gap-1">
                                     <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 448 512">

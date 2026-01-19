@@ -146,7 +146,7 @@
         </section>
 
         <section class="md:flex items-center justify-between pt-4 text-sm text-white">
-            <p class="">{{ app_setting()->copy_right ?? '' }}</p>
+            <h1 class="">{{ app_setting()->copy_right ?? '' }}</h1>
             <ul class="flex items-center gap-4 capitalize mt-4 md:mt-0">
                 @if ($footerPages->isNotEmpty())
                     @foreach ($footerPages as $footerPage)

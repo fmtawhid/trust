@@ -139,7 +139,7 @@
                 @if ($ad = get_advertisements(1, 1))
                 {!! $ad->embed_code !!}
                 @else
-                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="" />
+                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="Trust News Ads" />
                 @endif
             </figure>
 
