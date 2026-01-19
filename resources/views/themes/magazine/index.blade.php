@@ -1,72 +1,5 @@
 <x-web-layout>
-    {{-- php code for news ticker start   --}}
-    {{-- <div class="headline-bar">
-    <div class="logo-box">Breaking news</div>
-    <div class="headline-text-container">
-        <div class="headline-text">
-            <span>📰 Breaking News:</span> 
-            {{ 'রাজধানীতে আজ ভারী বৃষ্টি।' }} <span>🌧️</span> |
-    {{ '💰 নতুন বাজেটে শিক্ষা খাতে বরাদ্দ বৃদ্ধি।' }} |
-    {{ '⚽ বাংলাদেশ দল আগামীকাল ভারতের বিপক্ষে মাঠে নামবে।' }}
-    </div>
-    </div>
-    </div>
 
-
-    <style>
-        .headline-bar {
-            margin-top: 0;
-            display: flex;
-            align-items: flex-start;
-            background: linear-gradient(90deg, #ff416c, #ff4b2b);
-            color: #fff;
-            padding: 10px;
-            overflow: hidden;
-            position: relative;
-            font-weight: bold;
-        }
-
-        .logo-box {
-            flex-shrink: 0;
-            background-color: #fff;
-            color: #ff416c;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-right: 15px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .headline-text-container {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .headline-text {
-            display: inline-block;
-            position: relative;
-            animation: scroll-left 20s linear infinite;
-            white-space: nowrap;
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        .headline-text span {
-            margin-right: 40px;
-            font-size: 20px;
-        }
-    </style> --}}
 
 
     {{-- php code for news ticker end  --}}
@@ -127,7 +60,7 @@
 
 
     <!-- Top Category News section -->
-    <section class="container grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 mt-4">
+    <section class="container grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 mt-4 p-0">
         <!-- Left Section -->
         <section class="space-y-4 order-2 xl:order-1 md:col-span-2 xl:col-auto">
             @if ($breakingNews->isNotEmpty())
@@ -139,7 +72,7 @@
                 @if ($ad = get_advertisements(1, 1))
                 {!! $ad->embed_code !!}
                 @else
-                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="Trust News Ads" />
+                <img class="w-full h-full object-cover" src="{{ asset('assets/ads-electronic-2.png') }}" alt="" />
                 @endif
             </figure>
 
@@ -184,7 +117,7 @@
             @if ($ad = get_advertisements(1, 2))
             {!! $ad->embed_code !!}
             @else
-            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="" />
+            <img class="w-full h-full object-cover" src="{{ asset('assets/banner-large.png') }}" alt="Trust News Ads" />
             @endif
         </picture>
     </section>

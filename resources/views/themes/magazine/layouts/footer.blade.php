@@ -9,7 +9,7 @@
             <div class="text-white space-y-8 lg:pr-4 2xl:pr-6">
                 <div>
                     <h2 class="text-xl font-bold mb-8 capitalize">{{ localize('about_us') }}</h2>
-                    <p>{{ app_setting()->footer_text }}</p>
+                    <h1>{{ app_setting()->footer_text }}</h1>
                 </div>
                 <ul class="space-y-2">
                     <li class="flex gap-3 items-center">
@@ -146,7 +146,7 @@
         </section>
 
         <section class="md:flex items-center justify-between pt-4 text-sm text-white">
-            <h1 class="">{{ app_setting()->copy_right ?? '' }}</h1>
+            <p class="">{{ app_setting()->copy_right ?? '' }}</p>
             <ul class="flex items-center gap-4 capitalize mt-4 md:mt-0">
                 @if ($footerPages->isNotEmpty())
                     @foreach ($footerPages as $footerPage)

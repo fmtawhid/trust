@@ -10,7 +10,7 @@
                     fill="currentColor" />
             </svg>
         </button>
-    <div class="h-auto max-w-md mx-auto p-6 bg-white dark:bg-neutral-800 shadow-md rounded-lg">
+<div class="h-auto max-w-md mx-auto p-6 bg-white dark:bg-neutral-800 shadow-md rounded-lg">
     <h2 class="text-2xl font-bold mb-6 text-center text-neutral-900 dark:text-white">
         {{ localize('login') }}
     </h2>

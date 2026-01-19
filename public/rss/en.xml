@@ -12,14 +12,25 @@
 <atom:link href="https://trustnews.press/rss/en.xml" rel="self" type="application/rss+xml" />
 <description>Latest news from Trust News (en)</description>
 <language>en</language>
-<copyright>Copyright 2025 Trust News</copyright>
-<lastBuildDate>Wed, 24 Dec 2025 10:36:29 +0600</lastBuildDate>
-<pubDate>Wed, 24 Dec 2025 10:36:29 +0600</pubDate>
+<copyright>Copyright 2026 Trust News</copyright>
+<lastBuildDate>Mon, 19 Jan 2026 12:53:10 +0600</lastBuildDate>
+<pubDate>Mon, 19 Jan 2026 12:53:10 +0600</pubDate>
 <image>
 <title>Trust News RSS Feed</title>
 <url>https://trustnews.press/storage/application/1756705274-logo.png</url>
 <link>https://trustnews.press</link>
 </image>
+<item>
+<title>Student League Leader Kamrul Hasan Still Absconding in CR Case</title>
+<link>https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</link>
+<guid isPermaLink="true">https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</guid>
+<atom:link href="https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/" rel="standout" />
+<description><![CDATA[Dhaka: Student League leader Md. Kamrul Hasan remains absconding despite repeated efforts by law enforcement agencies following the filing of a criminal case against him in a Dhaka court. The case, registered as CR Case No. 563/2025, was filed some t...]]></description>
+<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1768652889.jpg" length="0" type="image/jpeg" />
+<dc:creator>Admin</dc:creator>
+<pubDate>Sat, 17 Jan 2026 06:28:44 +0600</pubDate>
+<category>National</category>
+</item>
 <item>
 <title>Discussion meeting held in Langadu zone to prevent extortion</title>
 <link>https://trustnews.press/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/</link>
@@ -260,19 +271,6 @@ Best known for her hits including Chandelier and Titanium, the pop star - whose 
 <enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761457383.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sun, 26 Oct 2025 11:43:06 +0600</pubDate>
-<category>National</category>
-</item>
-<item>
-<title>&#039;The first time sci-fi was presented as serious drama&#039;:</title>
-<link>https://trustnews.press/en/the-first-time-scifi-was-presented-as-serious-drama/</link>
-<guid isPermaLink="true">https://trustnews.press/en/the-first-time-scifi-was-presented-as-serious-drama/</guid>
-<atom:link href="https://trustnews.press/en/the-first-time-scifi-was-presented-as-serious-drama/" rel="standout" />
-<description><![CDATA[Sixty years ago, anthology series Out of the Unknown premiered on the BBC. It served up serious, one-off sci-fi dramas exploring our relationship with technology, among other things.
-
-In a crowded TV landscape, few shows have carved out as distinct...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761457497.jpg" length="0" type="image/jpeg" />
-<dc:creator>Admin</dc:creator>
-<pubDate>Sun, 26 Oct 2025 11:45:00 +0600</pubDate>
 <category>National</category>
 </item>
 </channel>
