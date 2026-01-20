@@ -6,10 +6,10 @@
     RewriteEngine On
 
     # ==============================
-    # Force HTTPS Redirect
+    # Force HTTPS Redirect (Disabled for Local Development)
     # ==============================
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

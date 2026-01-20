@@ -18,7 +18,10 @@ class SecurityHeaders
     {
         $response = $next($request);
 
-        // HSTS - Strict Transport Security (1 year)
+        // Skip security headers in local development
+        if (app()->environment('local')) {
+            return $response;
+        }
         $response->header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
 
         // Prevent MIME type sniffing
@@ -38,7 +41,7 @@ class SecurityHeaders
 
         // Content Security Policy - Admin Panel Safe Config
         $csp = "default-src 'self'; " .
-               "script-src 'self' https://trustnews.press https://cdnjs.cloudflare.com 'unsafe-inline'; " .
+               "script-src 'self' https://trustnews.press https://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval'; " .
                "style-src 'self' https://trustnews.press https://fonts.googleapis.com 'unsafe-inline'; " .
                "font-src 'self' https://fonts.gstatic.com; " .
                "img-src 'self' data: https:; " .
