@@ -13,9 +13,6 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
 
     {!! SEOTools::generate() !!}
 
-    <!-- Canonical URL for SEO (Prevents Duplicate Content) -->
-    <link rel="canonical" href="{{ url()->current() }}" />
-
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="{{ \App\Helpers\ThemeHelper::asset('plugins/swiper/css/swiper-bundle.min.css') }}" />
 
@@ -83,12 +80,12 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
         }
     </style>
 
-    <!-- Tailwind css - Optimized Loading (Vite handles minification) -->
+    <!-- Tailwind css -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('plugins-css')
     @stack('custom-css')
 
-    <!-- Google Analytics (GA4) - Async (Non-blocking) -->
+    <!-- Google Analytics (GA4) -->
     @if (app()->environment('production') && isset($metaInfo->google_analytics) && $metaInfo->google_analytics)
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ $metaInfo->google_analytics }}"></script>
     <script>
@@ -183,10 +180,9 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
         const ajaxPollResultUrl = "{{ route('ajax.poll.result', ['poll' => '__POLL_ID__']) }}";
     </script>
 
-    {{-- ✅ jQuery - NO DEFER (Must load before other scripts) --}}
     <script src="{{ asset('website/js/jquery-3.7.1.min.js') }}"></script>
 
-    {{-- ✅ Page Loader Script - Critical (No defer) --}}
+    {{-- ✅ Page Loader Script --}}
     <script>
         document.body.classList.add('loading-active');
 
@@ -204,28 +200,26 @@ $direction = app()->getLocale() == 'ar' ? 'rtl' : 'ltr';
     </script>
     {{-- ✅ Page Loader Script End --}}
 
-    {{-- ✅ Theme Scripts - Deferred for Better Performance (jQuery already loaded) --}}
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('plugins/swiper/js/swiper-bundle.min.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/website.js?v=5') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/global-tab.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/dark-light.js?v=2') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/user-profile.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/user-profile-setting.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/global-modal.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/mega-menu-inner-tab.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/mobile-side-menu.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/top-menu.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/video-play.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/login-modal.js?v=5') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/subscribe-form.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/category-view.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/poll-vote-result.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/youtube-play-alpinejs.js') }}"></script>
-    <script defer src="{{ \App\Helpers\ThemeHelper::asset('js/language-switcher-sm.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('plugins/swiper/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/website.js?v=5') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/global-tab.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/dark-light.js?v=2') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/user-profile.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/user-profile-setting.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/global-modal.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/mega-menu-inner-tab.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/mobile-side-menu.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/top-menu.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/video-play.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/login-modal.js?v=5') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/subscribe-form.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/category-view.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/poll-vote-result.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/youtube-play-alpinejs.js') }}"></script>
+    <script src="{{ \App\Helpers\ThemeHelper::asset('js/language-switcher-sm.js') }}"></script>
 
-    {{-- ✅ Utility Scripts - Deferred for Better Performance --}}
-    <script defer src="{{ asset('website/js/copy-url.js') }}"></script>
-    <script defer src="{{ asset('website/js/customized-font-size.js?v=5') }}"></script>
+    <script src="{{ asset('website/js/copy-url.js') }}"></script>
+    <script src="{{ asset('website/js/customized-font-size.js?v=5') }}"></script>
 
     @stack('plugins-js')
     @stack('custom-js')

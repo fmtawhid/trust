@@ -1,14 +1,3 @@
-
 User-agent: *
-Allow: /
-Disallow: /admin/
 Disallow: /rss-details-
-Disallow: /api/
-Disallow: /storage/
-Disallow: /thumb/
-Disallow: /*.json
-Disallow: /vendor/
 
-# Sitemap URLs
-Sitemap: https://trustnews.press/sitemap/bn.xml
-Sitemap: https://trustnews.press/sitemap/en.xml
