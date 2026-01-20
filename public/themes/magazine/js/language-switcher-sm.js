@@ -1,17 +1,22 @@
 // Toggle dropdown open/close
-const dropdownButton = document.getElementById("dropdownButton");
-const dropdownMenu = document.getElementById("dropdownMenu");
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
 
-dropdownButton.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("hidden");
-});
+    // Only attach listeners if elements exist
+    if (dropdownButton && dropdownMenu) {
+        dropdownButton.addEventListener("click", () => {
+            dropdownMenu.classList.toggle("hidden");
+        });
 
-document.addEventListener("click", (e) => {
-    if (
-        !dropdownButton.contains(e.target) &&
-        !dropdownMenu.contains(e.target)
-    ) {
-        dropdownMenu.classList.add("hidden");
+        document.addEventListener("click", (e) => {
+            if (
+                !dropdownButton.contains(e.target) &&
+                !dropdownMenu.contains(e.target)
+            ) {
+                dropdownMenu.classList.add("hidden");
+            }
+        });
     }
 });
 
