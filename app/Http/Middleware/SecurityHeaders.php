@@ -36,6 +36,16 @@ class SecurityHeaders
         // Permissions Policy (formerly Feature Policy)
         $response->header('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
 
+        // Content Security Policy - Admin Panel Safe Config
+        $csp = "default-src 'self'; " .
+               "script-src 'self' https://trustnews.press https://cdnjs.cloudflare.com 'unsafe-inline'; " .
+               "style-src 'self' https://trustnews.press https://fonts.googleapis.com 'unsafe-inline'; " .
+               "font-src 'self' https://fonts.gstatic.com; " .
+               "img-src 'self' data: https:; " .
+               "connect-src 'self' https://trustnews.press;";
+        
+        $response->header('Content-Security-Policy', $csp);
+
         return $response;
     }
 }
