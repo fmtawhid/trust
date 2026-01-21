@@ -92,7 +92,7 @@ class AdvertisementController extends Controller
             // Build embed code
             $ad_img = asset('storage/' . $path);
             $ad_img_url = $this->addhttp(trim($request->ad_url));
-            $embed_code_link = '<a target="_blank" href="' . $ad_img_url . '"><img width="100%" src="' . $ad_img . '" alt=""></a>';
+            $embed_code_link = '<a target="_blank" href="' . $ad_img_url . '"><img width="100%" src="' . $ad_img . '" alt="Trust news Ads Campain"></a>';
         }
     }
 
@@ -227,7 +227,7 @@ class AdvertisementController extends Controller
 
                 $ad_img = asset('storage/' . $path);
                 $ad_img_url = $this->addhttp(trim(@$request->ad_url));
-                $embed_code_link = '<a target="_blank" href="' . $ad_img_url . '"><img width="100%" src="' . $ad_img . '" alt=""></a>';
+                $embed_code_link = '<a target="_blank" href="' . $ad_img_url . '"><img width="100%" src="' . $ad_img . '" alt="Trust news Ads Campain"></a>';
             }
         }
 
