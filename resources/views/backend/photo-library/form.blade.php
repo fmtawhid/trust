@@ -121,7 +121,7 @@
                          <div class="form-group">
                              <label>Image <span class="text-danger">*</span></label>
                              <input type="file" accept="image/*" name="image" id="imageInput" class="form-control mb-2" required>
-                             <div class="text-warning mb-2">* File size max 5 MB</div>
+                             <div class="text-warning mb-2">* File size max 2 MB</div>
                              <div id="preview_file_image" class="preview-box">
                                  <small class="text-muted">No image selected</small>
                              </div>
@@ -203,8 +203,8 @@ let originalData = null;
 document.getElementById('imageInput').addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (!file) return;
-    if (file.size > 5 * 1024 * 1024) {
-        alert('Max 5MB allowed');
+    if (file.size > 2 * 1024 * 1024) {
+        alert('Max 2MB allowed');
         e.target.value = '';
         return;
     }
@@ -254,10 +254,6 @@ function cropImage(type) {
         sizeInfo = document.getElementById('largeSizeInfo');
     }
 
-    const imageData = cropper.getImageData();
-    width = Math.min(width, imageData.naturalWidth);
-    height = Math.min(height, imageData.naturalHeight);
-
     const croppedCanvas = cropper.getCroppedCanvas({ width, height });
     if (!croppedCanvas) return;
 
@@ -282,14 +278,21 @@ function cropImage(type) {
         ctx.drawImage(logo, x, y, logoWidth, logoHeight);
         ctx.globalAlpha = 1.0;
 
-        const dataURL = finalCanvas.toDataURL('image/jpeg', 0.95);
+        // Compress image: thumb at 0.70 quality, large at 0.75 quality
+        let quality = type === 'thumb' ? 0.70 : 0.75;
+        const dataURL = finalCanvas.toDataURL('image/jpeg', quality);
 
         targetPreview.innerHTML = `<img src="${dataURL}" style="max-width:100%;height:auto;display:block;border-radius:8px;">`;
         targetInput.value = dataURL;
 
         const approxKb = Math.round((dataURL.length * 3 / 4) / 1024);
-        sizeInfo.textContent = `Saved: ${width}×${height}px (~${approxKb} KB)`;
-        console.log(type + ' crop created with logo at top-right');
+        sizeInfo.textContent = `Saved: ${width}×${height}px (~${approxKb} KB) - Compressed`;
+        console.log(type + ' crop created with logo at top-right (Quality: ' + (quality * 100) + '%)');
+        
+        // Validate compressed size doesn't exceed 2MB
+        if (dataURL.length > 2 * 1024 * 1024) {
+            alert('Compressed image still exceeds 2MB. Please crop to a smaller size.');
+        }
     };
 }
 

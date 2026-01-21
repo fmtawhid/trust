@@ -43,37 +43,154 @@ class HomeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($language='')
+    // public function index($language='')
+    // {
+    //     $locale = app()->getLocale();
+    //     $metaData = Setting::select('details')->where('event','meta')->first();
+    //     $metaInfo = json_decode($metaData->details);
+
+    //     // Optimized defaults with primary keywords for SEO
+    //     if ($locale === 'bn') {
+    //         $title = $metaInfo->title ?? 'ট্রাস্ট নিউজ - বাংলাদেশের শীর্ষ অনলাইন নিউজ পোর্টাল';
+    //         $description = $metaInfo->meta_description ?? 'ট্রাস্ট নিউজে পান বাংলাদেশ ও আন্তর্জাতিক সর্বশেষ খবর, রাজনীতি, ব্যবসা, প্রযুক্তি, বিনোদন এবং আরও অনেক কিছু। বিশ্বস্ত সংবাদের জন্য আমাদের অনুসরণ করুন।';
+    //         $metaKeywords = $metaInfo->meta_tag ?? 'বাংলাদেশ খবর, সর্বশেষ সংবাদ, বাংলা নিউজ, ট্রাস্ট নিউজ, আন্তর্জাতিক খবর, রাজনীতি, ব্যবসা, খেলাধুলা, বিনোদন';
+    //     } else {
+    //         $title = $metaInfo->title ?? 'Trust News - Bangladesh\'s Leading Online News Portal';
+    //         $description = $metaInfo->meta_description ?? 'Get the latest Bangladesh and international news, politics, business, technology, sports and entertainment on Trust News. Your trusted source for credible and reliable news coverage with in-depth analysis.';
+    //         $metaKeywords = $metaInfo->meta_tag ?? 'Trust News, Bangladesh News, Online News Portal, Latest News, Breaking News, Politics, Business, Technology, Entertainment, Sports';
+    //     }
+
+    //     SEOTools::setTitle($title);
+    //     SEOMeta::addKeyword($metaKeywords);
+    //     SEOTools::setDescription($description);
+    //     SEOTools::setCanonical(url()->current());
+    //     SEOTools::opengraph()->setUrl(url()->current());
+    //     SEOTools::opengraph()->addProperty('type', 'website');
+    //     SEOTools::opengraph()->setTitle($title);
+    //     SEOTools::opengraph()->setDescription($description);
+    //     SEOTools::twitter()->setTitle($title);
+
+    //     $data = $this->homeDataService->getHomePageData();
+    //     dd($data);
+    //     return ThemeHelper::view('index', $data);
+    // }
+
+    public function index($language = '')
     {
         $locale = app()->getLocale();
-        $metaData = Setting::select('details')->where('event','meta')->first();
+        $metaData = Setting::select('details')->where('event', 'meta')->first();
         $metaInfo = json_decode($metaData->details);
 
-        // Optimized defaults with primary keywords for SEO
+        // -----------------------------
+        // Default Meta Info
+        // -----------------------------
         if ($locale === 'bn') {
-            $title = $metaInfo->title ?? 'ট্রাস্ট নিউজ - বাংলাদেশের শীর্ষ অনলাইন নিউজ পোর্টাল';
-            $description = $metaInfo->meta_description ?? 'ট্রাস্ট নিউজে পান বাংলাদেশ ও আন্তর্জাতিক সর্বশেষ খবর, রাজনীতি, ব্যবসা, প্রযুক্তি, বিনোদন এবং আরও অনেক কিছু। বিশ্বস্ত সংবাদের জন্য আমাদের অনুসরণ করুন।';
-            $metaKeywords = $metaInfo->meta_tag ?? 'বাংলাদেশ খবর, সর্বশেষ সংবাদ, বাংলা নিউজ, ট্রাস্ট নিউজ, আন্তর্জাতিক খবর, রাজনীতি, ব্যবসা, খেলাধুলা, বিনোদন';
+            $defaultTitle = $metaInfo->title ?? 'ট্রাস্ট নিউজ - বাংলাদেশের শীর্ষ অনলাইন নিউজ পোর্টাল';
+            $defaultDescription = $metaInfo->meta_description ?? 'ট্রাস্ট নিউজে পান বাংলাদেশ ও আন্তর্জাতিক সর্বশেষ খবর, রাজনীতি, ব্যবসা, প্রযুক্তি, বিনোদন এবং আরও অনেক কিছু। বিশ্বস্ত সংবাদের জন্য আমাদের অনুসরণ করুন।';
+            $defaultKeywords = $metaInfo->meta_tag ?? 'বাংলাদেশ খবর, সর্বশেষ সংবাদ, বাংলা নিউজ, ট্রাস্ট নিউজ, আন্তর্জাতিক খবর, রাজনীতি, ব্যবসা, খেলাধুলা, বিনোদন';
+            $ogLocale = 'bn_BD';
         } else {
-            $title = $metaInfo->title ?? 'Trust News - Bangladesh\'s Leading Online News Portal';
-            $description = $metaInfo->meta_description ?? 'Get the latest Bangladesh and international news, politics, business, technology, sports and entertainment on Trust News. Your trusted source for credible and reliable news coverage with in-depth analysis.';
-            $metaKeywords = $metaInfo->meta_tag ?? 'Trust News, Bangladesh News, Online News Portal, Latest News, Breaking News, Politics, Business, Technology, Entertainment, Sports';
+            $defaultTitle = $metaInfo->title ?? 'Trust News - Bangladesh\'s Leading Online News Portal';
+            $defaultDescription = $metaInfo->meta_description ?? 'Get the latest Bangladesh and international news, politics, business, technology, sports and entertainment on Trust News. Your trusted source for credible and reliable news coverage with in-depth analysis.';
+            $defaultKeywords = $metaInfo->meta_tag ?? 'Trust News, Bangladesh News, Online News Portal, Latest News, Breaking News, Politics, Business, Technology, Entertainment, Sports';
+            $ogLocale = 'en_US';
         }
 
-        SEOTools::setTitle($title);
-        SEOMeta::addKeyword($metaKeywords);
-        SEOTools::setDescription($description);
+        // -----------------------------
+        // Get Home Page Data
+        // -----------------------------
+        $data = $this->homeDataService->getHomePageData();
+
+        // -----------------------------
+        // Homepage Meta: prefer saved SEO settings
+        // -----------------------------
+        // Use meta settings (from settings table) for homepage title/description/keywords
+        $dynamicTitle = $defaultTitle;
+        $dynamicDescription = $defaultDescription;
+        $dynamicKeywords = $defaultKeywords;
+
+        // -----------------------------
+        // SEO Meta
+        // -----------------------------
+        SEOTools::setTitle($dynamicTitle);
+        SEOTools::setDescription($dynamicDescription);
+        SEOMeta::addKeyword($dynamicKeywords);
         SEOTools::setCanonical(url()->current());
+
+        // -----------------------------
+        // OpenGraph
+        // -----------------------------
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
-        SEOTools::opengraph()->setTitle($title);
-        SEOTools::opengraph()->setDescription($description);
-        SEOTools::twitter()->setTitle($title);
+        SEOTools::opengraph()->setTitle($dynamicTitle);
+        SEOTools::opengraph()->setDescription($dynamicDescription);
+        SEOTools::opengraph()->addProperty('locale', $ogLocale);
 
-        $data = $this->homeDataService->getHomePageData();
+        // Use SEO default image for homepage if set, otherwise fallback to first featured/top news image
+        $ogImage = null;
+        if (!empty($metaInfo->default_image)) {
+            $ogImage = preg_match('/^https?:\/\//', $metaInfo->default_image) ? $metaInfo->default_image : asset($metaInfo->default_image);
+            $ogImageAlt = $metaInfo->title ?? 'Trust News';
+            SEOTools::opengraph()->addImage($ogImage);
+            SEOTools::opengraph()->addProperty('og:image:alt', $ogImageAlt);
+            SEOTools::jsonLd()->addImage($ogImage);
+        } else {
+            $firstNewsItem = $data['homePageTopNews']->first()->news ?? null;
+            if ($firstNewsItem) {
+                $ogImage = $firstNewsItem->image_base_url ?? asset('/assets/default-home.jpg');
+                $ogImageAlt = $firstNewsItem->image_alt ?? $firstNewsItem->title ?? 'Trust News';
+                SEOTools::opengraph()->addImage($ogImage);
+                SEOTools::opengraph()->addProperty('og:image:alt', $ogImageAlt);
+                SEOTools::jsonLd()->addImage($ogImage);
+            }
+        }
+
+        // -----------------------------
+        // Twitter Card
+        // -----------------------------
+        SEOTools::twitter()->setTitle($dynamicTitle);
+        SEOTools::twitter()->setDescription($dynamicDescription);
+        SEOTools::twitter()->setType('summary_large_image');
+        if (isset($ogImage)) {
+            SEOTools::twitter()->setImage($ogImage);
+            SEOTools::twitter()->addValue('image:alt', $ogImageAlt);
+        }
+
+        // -----------------------------
+        // JSON-LD Structured Data
+        // -----------------------------
+        SEOTools::jsonLd()->setType('WebSite');
+        SEOTools::jsonLd()->setTitle($dynamicTitle);
+        SEOTools::jsonLd()->setDescription($dynamicDescription);
+        SEOTools::jsonLd()->setUrl(url()->current());
+
+        // Add top news as mainEntity for rich results
+        foreach ($data['homePageTopNews'] as $newsMap) {
+            $newsItem = $newsMap->news ?? null;
+            if ($newsItem) {
+                $newsImage = $newsItem->image_base_url ?? asset('/assets/default-home.jpg');
+                SEOTools::jsonLd()->addValue('mainEntity', [
+                    '@type' => 'NewsArticle',
+                    'headline' => $newsItem->title,
+                    'image' => [
+                        '@type' => 'ImageObject',
+                        'url' => $newsImage,
+                        'caption' => $newsItem->image_title ?? $newsItem->title,
+                    ],
+                    'datePublished' => $newsItem->publish_date,
+                    'url' => __url($newsItem->encode_title),
+                ]);
+            }
+        }
+
+        // -----------------------------
+        // Optional: Debug
+        // -----------------------------
+        // dd($data);
 
         return ThemeHelper::view('index', $data);
     }
+
 
     public function handle($param)
     {
@@ -248,11 +365,70 @@ class HomeController extends Controller
         //
     }
 
+    // public function detailNews($param, $lang = '')
+    // {
+    //     $data = $this->homeDataService->getNewsDetails($param);
+    //     $news = $data['newsDetail'];
+
+    //     $title = $news->seo_title ?? $news->title;
+    //     $rawContent = $news->seoOnpage->meta_description ?? $news->news;
+    //     $description = Str::limit(
+    //         preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($rawContent))),
+    //         150
+    //     );
+
+    //     $url = __url($news->encode_title);
+    //     $image = isset($news->photoLibrary->image_base_url) ? $news->photoLibrary->image_base_url : asset('/assets/details-lg-image.png');
+    //     $published = $news->publish_date;
+    //     $updated = $news->last_update;
+
+    //     // -- Basic Meta
+    //     SEOTools::setTitle($title);
+    //     SEOTools::setDescription($description);
+    //     SEOTools::metatags()->addMeta('article:published_time', $published->toW3cString(), 'property');
+    //     SEOTools::metatags()->addMeta('article:modified_time', $updated->toW3cString(), 'property');
+    //     SEOTools::setCanonical($url);
+
+    //     if (isset($news->seoOnpage->meta_keyword) && !empty($news->seoOnpage->meta_keyword)) {
+    //         SEOMeta::addKeyword(explode(',', $news->seoOnpage->meta_keyword));
+    //     }
+
+    //     // -- OpenGraph (Facebook, etc.)
+    //     SEOTools::opengraph()->setTitle($title);
+    //     SEOTools::opengraph()->setDescription($description);
+    //     SEOTools::opengraph()->setUrl($url);
+    //     SEOTools::opengraph()->addImage($image);
+    //     SEOTools::opengraph()->setType('article');
+    //     SEOTools::opengraph()->addProperty('locale', 'en_US');
+    //     SEOTools::opengraph()->addProperty('article:published_time', $published->toW3cString());
+    //     SEOTools::opengraph()->addProperty('article:modified_time', $updated->toW3cString());
+
+    //     // -- Twitter Card
+    //     SEOTools::twitter()->setTitle($title);
+    //     SEOTools::twitter()->setDescription($description);
+    //     SEOTools::twitter()->setImage($image);
+    //     SEOTools::twitter()->setType('summary_large_image');
+
+    //     // -- JSON-LD Structured Data
+    //     SEOTools::jsonLd()->setTitle($title);
+    //     SEOTools::jsonLd()->setDescription($description);
+    //     SEOTools::jsonLd()->setType('article');
+    //     SEOTools::jsonLd()->setUrl($url);
+    //     SEOTools::jsonLd()->addImage($image);
+    //     SEOTools::jsonLd()->addValue('datePublished', $published->toW3cString());
+    //     SEOTools::jsonLd()->addValue('dateModified', $updated->toW3cString());
+    //     dd($data);
+    //     return ThemeHelper::view('details', $data);
+    // }
+
     public function detailNews($param, $lang = '')
     {
         $data = $this->homeDataService->getNewsDetails($param);
         $news = $data['newsDetail'];
 
+        // ----------------------------
+        // Basic Data
+        // ----------------------------
         $title = $news->seo_title ?? $news->title;
         $rawContent = $news->seoOnpage->meta_description ?? $news->news;
         $description = Str::limit(
@@ -261,48 +437,104 @@ class HomeController extends Controller
         );
 
         $url = __url($news->encode_title);
-        $image = isset($news->photoLibrary->image_base_url) ? $news->photoLibrary->image_base_url : asset('/assets/details-lg-image.png');
+        $image = $news->photoLibrary->image_base_url ?? asset('/assets/details-lg-image.png');
         $published = $news->publish_date;
         $updated = $news->last_update;
 
-        // -- Basic Meta
+        $authorName = $news->reporter ?? 'Trust News';
+        $articleSection = $news->page ?? null;
+        $imageAlt = $news->image_alt ?? $title;
+        $imageTitle = $news->image_title ?? $title;
+        $reference = $news->reference ?? null;
+
+        // ----------------------------
+        // Basic Meta
+        // ----------------------------
         SEOTools::setTitle($title);
         SEOTools::setDescription($description);
-        SEOTools::metatags()->addMeta('article:published_time', $published->toW3cString(), 'property');
-        SEOTools::metatags()->addMeta('article:modified_time', $updated->toW3cString(), 'property');
         SEOTools::setCanonical($url);
 
-        if (isset($news->seoOnpage->meta_keyword) && !empty($news->seoOnpage->meta_keyword)) {
+        SEOTools::metatags()->addMeta('article:published_time', $published->toW3cString(), 'property');
+        SEOTools::metatags()->addMeta('article:modified_time', $updated->toW3cString(), 'property');
+        SEOTools::metatags()->addMeta('author', $authorName);
+        SEOTools::metatags()->addMeta('content-language', $lang ?: 'en');
+        if (!empty($news->seoOnpage->meta_keyword)) {
             SEOMeta::addKeyword(explode(',', $news->seoOnpage->meta_keyword));
         }
 
-        // -- OpenGraph (Facebook, etc.)
+        // ----------------------------
+        // OpenGraph (Facebook, etc.)
+        // ----------------------------
         SEOTools::opengraph()->setTitle($title);
         SEOTools::opengraph()->setDescription($description);
         SEOTools::opengraph()->setUrl($url);
         SEOTools::opengraph()->addImage($image);
         SEOTools::opengraph()->setType('article');
-        SEOTools::opengraph()->addProperty('locale', 'en_US');
+        SEOTools::opengraph()->addProperty('locale', $lang === 'bn' ? 'bn_BD' : 'en_US');
         SEOTools::opengraph()->addProperty('article:published_time', $published->toW3cString());
         SEOTools::opengraph()->addProperty('article:modified_time', $updated->toW3cString());
+        if ($articleSection) {
+            SEOTools::opengraph()->addProperty('article:section', $articleSection);
+        }
+        SEOTools::opengraph()->addProperty('site_name', 'Trust News');
+        SEOTools::opengraph()->addProperty('og:image:alt', $imageAlt);
 
-        // -- Twitter Card
+        // ----------------------------
+        // Twitter Card
+        // ----------------------------
         SEOTools::twitter()->setTitle($title);
         SEOTools::twitter()->setDescription($description);
         SEOTools::twitter()->setImage($image);
         SEOTools::twitter()->setType('summary_large_image');
+        SEOTools::twitter()->addValue('image:alt', $imageAlt);
+        SEOTools::twitter()->addValue('site', '@trustnews');
+        SEOTools::twitter()->addValue('creator', '@trustnews');
 
-        // -- JSON-LD Structured Data
+        // ----------------------------
+        // JSON-LD Structured Data (NewsArticle)
+        // ----------------------------
+        SEOTools::jsonLd()->setType('NewsArticle');
         SEOTools::jsonLd()->setTitle($title);
         SEOTools::jsonLd()->setDescription($description);
-        SEOTools::jsonLd()->setType('article');
         SEOTools::jsonLd()->setUrl($url);
-        SEOTools::jsonLd()->addImage($image);
+        SEOTools::jsonLd()->addImage([
+            '@type' => 'ImageObject',
+            'url' => $image,
+            'caption' => $imageTitle,
+        ]);
         SEOTools::jsonLd()->addValue('datePublished', $published->toW3cString());
         SEOTools::jsonLd()->addValue('dateModified', $updated->toW3cString());
+        SEOTools::jsonLd()->addValue('author', [
+            '@type' => 'Person',
+            'name' => $authorName,
+        ]);
+        SEOTools::jsonLd()->addValue('publisher', [
+            '@type' => 'Organization',
+            'name' => 'Trust News',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => asset('logo.png'),
+            ],
+        ]);
+        if ($articleSection) {
+            SEOTools::jsonLd()->addValue('articleSection', $articleSection);
+        }
+        if ($reference) {
+            SEOTools::jsonLd()->addValue('citation', $reference);
+        }
+        SEOTools::jsonLd()->addValue('mainEntityOfPage', [
+            '@type' => 'WebPage',
+            '@id' => $url,
+        ]);
+
+        // ----------------------------
+        // Optional: Debug
+        // ----------------------------
+        // dd($data);
 
         return ThemeHelper::view('details', $data);
     }
+
 
     public function archiveNewsDetails($param)
     {

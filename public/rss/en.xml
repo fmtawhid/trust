@@ -8,269 +8,264 @@
                 xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Trust News RSS Feed (en)</title>
-<link>https://trustnews.press</link>
-<atom:link href="https://trustnews.press/rss/en.xml" rel="self" type="application/rss+xml" />
+<link>http://trust.test</link>
+<atom:link href="http://trust.test/rss/en.xml" rel="self" type="application/rss+xml" />
 <description>Latest news from Trust News (en)</description>
 <language>en</language>
 <copyright>Copyright 2026 Trust News</copyright>
-<lastBuildDate>Mon, 19 Jan 2026 12:53:10 +0600</lastBuildDate>
-<pubDate>Mon, 19 Jan 2026 12:53:10 +0600</pubDate>
+<lastBuildDate>Wed, 21 Jan 2026 10:24:56 +0600</lastBuildDate>
+<pubDate>Wed, 21 Jan 2026 10:24:56 +0600</pubDate>
 <image>
 <title>Trust News RSS Feed</title>
-<url>https://trustnews.press/storage/application/1756705274-logo.png</url>
-<link>https://trustnews.press</link>
+<url>http://trust.test/storage/application/1756705274-logo.png</url>
+<link>http://trust.test</link>
 </image>
 <item>
+<title>head line</title>
+<link>http://trust.test/en/head-line/</link>
+<guid isPermaLink="true">http://trust.test/en/head-line/</guid>
+<atom:link href="http://trust.test/en/head-line/" rel="standout" />
+<description><![CDATA[bcxbv]]></description>
+<dc:creator>Admin</dc:creator>
+<pubDate>Wed, 21 Jan 2026 10:24:56 +0600</pubDate>
+<category>Business</category>
+</item>
+<item>
+<title>Headline</title>
+<link>http://trust.test/en/headline/</link>
+<guid isPermaLink="true">http://trust.test/en/headline/</guid>
+<atom:link href="http://trust.test/en/headline/" rel="standout" />
+<description><![CDATA[Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Descriptio...]]></description>
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1768968821.jpg" length="0" type="image/jpeg" />
+<dc:creator>Admin</dc:creator>
+<pubDate>Wed, 21 Jan 2026 10:22:59 +0600</pubDate>
+<category>Technology</category>
+</item>
+<item>
 <title>Student League Leader Kamrul Hasan Still Absconding in CR Case</title>
-<link>https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</link>
-<guid isPermaLink="true">https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</guid>
-<atom:link href="https://trustnews.press/en/studentleagueleaderkamrulhasanstillabscondingincrcase/" rel="standout" />
+<link>http://trust.test/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</link>
+<guid isPermaLink="true">http://trust.test/en/studentleagueleaderkamrulhasanstillabscondingincrcase/</guid>
+<atom:link href="http://trust.test/en/studentleagueleaderkamrulhasanstillabscondingincrcase/" rel="standout" />
 <description><![CDATA[Dhaka: Student League leader Md. Kamrul Hasan remains absconding despite repeated efforts by law enforcement agencies following the filing of a criminal case against him in a Dhaka court. The case, registered as CR Case No. 563/2025, was filed some t...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1768652889.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1768652889.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sat, 17 Jan 2026 06:28:44 +0600</pubDate>
 <category>National</category>
 </item>
 <item>
 <title>Discussion meeting held in Langadu zone to prevent extortion</title>
-<link>https://trustnews.press/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/</link>
-<guid isPermaLink="true">https://trustnews.press/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/</guid>
-<atom:link href="https://trustnews.press/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/" rel="standout" />
+<link>http://trust.test/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/</link>
+<guid isPermaLink="true">http://trust.test/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/</guid>
+<atom:link href="http://trust.test/en/discussion-meeting-held-in-langadu-zone-to-prevent-extortion/" rel="standout" />
 <description><![CDATA[Md. Ershad Ali, Rangamati representative:
 
 An important exchange meeting has been held on the initiative of Longadu zone of Rangamati to maintain the overall stability of the hill region and prevent extortion. 
 On Tuesday (2nd December) at 12 noon...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1764684620.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1764684620.jpg" length="0" type="image/jpeg" />
 <dc:creator>tonoy</dc:creator>
 <pubDate>Tue, 02 Dec 2025 08:11:57 +0600</pubDate>
 <category>National</category>
 </item>
 <item>
 <title>Medical technologists and pharmacists to hold strike in Khagrachari</title>
-<link>https://trustnews.press/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/</link>
-<guid isPermaLink="true">https://trustnews.press/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/</guid>
-<atom:link href="https://trustnews.press/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/" rel="standout" />
+<link>http://trust.test/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/</link>
+<guid isPermaLink="true">http://trust.test/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/</guid>
+<atom:link href="http://trust.test/en/medical-technologists-and-pharmacists-to-hold-strike-in-khagrachari/" rel="standout" />
 <description><![CDATA[Abu Rasel sumon
 District Correspondent: Khagrachari 
 
 As part of the central program, the medical technologists and pharmacists are holding a strike in Khagrachari with the aim of implementing the 10th grade salary scale demand after the four-day...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1764481912.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1764481912.jpg" length="0" type="image/jpeg" />
 <dc:creator>tonoy</dc:creator>
 <pubDate>Sun, 30 Nov 2025 12:02:46 +0600</pubDate>
 <category>National</category>
 </item>
 <item>
 <title>ACC raid on Krishi Bank at Longdu in Rangamati</title>
-<link>https://trustnews.press/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/</link>
-<guid isPermaLink="true">https://trustnews.press/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/</guid>
-<atom:link href="https://trustnews.press/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/" rel="standout" />
+<link>http://trust.test/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/</link>
+<guid isPermaLink="true">http://trust.test/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/</guid>
+<atom:link href="http://trust.test/en/acc-raid-on-krishi-bank-at-longdu-in-rangamati/" rel="standout" />
 <description><![CDATA[Md. Ershad Ali, Rangamati representative:
 Assistant Director of Rangamati ACC Farhad Hossain said that during the ACC's operation to investigate the irregularities and corruption in the loan disbursement in Longadu of Krishi Bank in Rangamati, preli...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1763905947.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1763905947.jpg" length="0" type="image/jpeg" />
 <dc:creator>tonoy</dc:creator>
 <pubDate>Sun, 23 Nov 2025 07:52:33 +0600</pubDate>
 <category>National</category>
 </item>
 <item>
 <title>Kairos Power, Google&#039;s partner, is hoping to generate 50 megawatts of nuclear power by 2030</title>
-<link>https://trustnews.press/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/</link>
-<guid isPermaLink="true">https://trustnews.press/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/</guid>
-<atom:link href="https://trustnews.press/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/" rel="standout" />
+<link>http://trust.test/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/</link>
+<guid isPermaLink="true">http://trust.test/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/</guid>
+<atom:link href="http://trust.test/en/kairos-power-googles-partner-is-hoping-to-generate-50-megawatts-of-nuclear-power-by-2030/" rel="standout" />
 <description><![CDATA[Kairos Power, Google's partner, is hoping to generate 50 megawatts of nuclear power by 2030 – equivalent to the amount of energy needed to power a small town.
 
 The company has set up shop in Oak Ridge, Tennessee – another noteworthy American nuclea...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761047869.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761047869.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sun, 26 Oct 2025 11:09:27 +0600</pubDate>
 <category>International</category>
 </item>
 <item>
 <title>US shipping chaos: I fear my wedding sari is destroyed</title>
-<link>https://trustnews.press/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/</link>
-<guid isPermaLink="true">https://trustnews.press/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/</guid>
-<atom:link href="https://trustnews.press/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/" rel="standout" />
+<link>http://trust.test/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/</link>
+<guid isPermaLink="true">http://trust.test/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/</guid>
+<atom:link href="http://trust.test/en/us-shipping-chaos-i-fear-my-wedding-sari-is-destroyed/" rel="standout" />
 <description><![CDATA[Graduate student Nicole Lobo moved back to the US in late August after a year in the UK, shipping 10 boxes of possessions back home to Philadelphia that she expected to arrive within a few days.
 
 Six weeks later, she is still waiting for the shipme...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761456866.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761456866.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sun, 26 Oct 2025 11:34:30 +0600</pubDate>
 <category>Business</category>
 </item>
 <item>
 <title>organisation supports female weavers, whom she and many others recognise as skilled artisans, through education and training.</title>
-<link>https://trustnews.press/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/</link>
-<guid isPermaLink="true">https://trustnews.press/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/</guid>
-<atom:link href="https://trustnews.press/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/" rel="standout" />
+<link>http://trust.test/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/</link>
+<guid isPermaLink="true">http://trust.test/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/</guid>
+<atom:link href="http://trust.test/en/organisation-supports-female-weavers-whom-she-and-many-others-recognise-as-skilled-artisans-through-education-and-training/" rel="standout" />
 <description><![CDATA[One of the weavers who has taken part in the workshops is Yamile Vangrieken. Sitting on a bright orange chinchorro at her home on the outskirts of Riohacha, she explains she leads a group of eight relatives from the rural community where her family i...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761456745.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761456745.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sun, 26 Oct 2025 11:32:30 +0600</pubDate>
 <category>Business</category>
 </item>
 <item>
 <title>The indigenous weavers who aim for empowerment over exploitation</title>
-<link>https://trustnews.press/en/theindigenousweaverswhoaimforempowermentoverexploitation/</link>
-<guid isPermaLink="true">https://trustnews.press/en/theindigenousweaverswhoaimforempowermentoverexploitation/</guid>
-<atom:link href="https://trustnews.press/en/theindigenousweaverswhoaimforempowermentoverexploitation/" rel="standout" />
+<link>http://trust.test/en/theindigenousweaverswhoaimforempowermentoverexploitation/</link>
+<guid isPermaLink="true">http://trust.test/en/theindigenousweaverswhoaimforempowermentoverexploitation/</guid>
+<atom:link href="http://trust.test/en/theindigenousweaverswhoaimforempowermentoverexploitation/" rel="standout" />
 <description><![CDATA[For every handwoven bag she sells on the palm-lined promenade of Riohacha, a city on Colombia's Caribbean coast, Sandra Aguilar feels that she's sharing a piece of her heritage.
 
 Once used exclusively by the Wayuu, the largest indigenous group in t...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761046999.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761046999.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:43:44 +0600</pubDate>
 <category>Business</category>
 </item>
 <item>
 <title>Bitcoin worth $14bn seized in US-UK crackdown on alleged scammers</title>
-<link>https://trustnews.press/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/</link>
-<guid isPermaLink="true">https://trustnews.press/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/</guid>
-<atom:link href="https://trustnews.press/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/" rel="standout" />
+<link>http://trust.test/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/</link>
+<guid isPermaLink="true">http://trust.test/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/</guid>
+<atom:link href="http://trust.test/en/bitcoin-worth-14bn-seized-in-usuk-crackdown-on-alleged-scammers/" rel="standout" />
 <description><![CDATA[The US government has seized more than $14bn (£10.5bn) in bitcoin and charged the founder of a Cambodian business empire, the Prince Group, with allegedly masterminding a massive cryptocurrency scam, which involved forced labour camps.
 
 UK and Camb...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761456599.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761456599.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Sun, 26 Oct 2025 11:30:17 +0600</pubDate>
 <category>Business</category>
 </item>
 <item>
 <title>trained to be in stressful situations, shows a biological blood flow shift,</title>
-<link>https://trustnews.press/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/</link>
-<guid isPermaLink="true">https://trustnews.press/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/</guid>
-<atom:link href="https://trustnews.press/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/" rel="standout" />
+<link>http://trust.test/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/</link>
+<guid isPermaLink="true">http://trust.test/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/</guid>
+<atom:link href="http://trust.test/en/trainedtobeinstressfulsituationsshowsabiologicalbloodflowshift/" rel="standout" />
 <description><![CDATA[The experimental stress test that I subjected myself to is carefully controlled and deliberately designed to be an unpleasant surprise. I arrived at the university with no idea what I was in for.  First, I was asked to sit, relax and listen to white...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761045815.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761045815.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:23:39 +0600</pubDate>
 <category>Technology</category>
 </item>
 <item>
 <title>Your nose gets colder when you&#039;re stressed.</title>
-<link>https://trustnews.press/en/yournosegetscolderwhenyourestressed/</link>
-<guid isPermaLink="true">https://trustnews.press/en/yournosegetscolderwhenyourestressed/</guid>
-<atom:link href="https://trustnews.press/en/yournosegetscolderwhenyourestressed/" rel="standout" />
+<link>http://trust.test/en/yournosegetscolderwhenyourestressed/</link>
+<guid isPermaLink="true">http://trust.test/en/yournosegetscolderwhenyourestressed/</guid>
+<atom:link href="http://trust.test/en/yournosegetscolderwhenyourestressed/" rel="standout" />
 <description><![CDATA[When I was asked to give an impromptu five-minute speech and then to count backwards in intervals of 17 - all in front of a panel of three strangers - the acute stress was written on my face.
 
 That is because psychologists from the University of Su...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761045907.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761045907.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:25:41 +0600</pubDate>
 <category>Technology</category>
 </item>
 <item>
 <title>Immediately after giving birth, women experience a precipitous drop in hormones progesterone and oestrogen</title>
-<link>https://trustnews.press/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/</link>
-<guid isPermaLink="true">https://trustnews.press/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/</guid>
-<atom:link href="https://trustnews.press/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/" rel="standout" />
+<link>http://trust.test/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/</link>
+<guid isPermaLink="true">http://trust.test/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/</guid>
+<atom:link href="http://trust.test/en/immediatelyaftergivingbirthwomenexperienceaprecipitousdropinhormonesprogesteroneandoestrogen/" rel="standout" />
 <description><![CDATA[Conversely, high levels of oestrogen immediately before ovulation have been linked to feelings of wellbeing and happiness. Meanwhile allopregnanolone, a product of the breakdown of progesterone, is also known for its calming effects.
 
 "If you give...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761046034.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761046034.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:27:24 +0600</pubDate>
 <category>Technology</category>
 </item>
 <item>
 <title>How your hormones might be controlling your mind</title>
-<link>https://trustnews.press/en/howyourhormonesmightbecontrollingyourmind/</link>
-<guid isPermaLink="true">https://trustnews.press/en/howyourhormonesmightbecontrollingyourmind/</guid>
-<atom:link href="https://trustnews.press/en/howyourhormonesmightbecontrollingyourmind/" rel="standout" />
+<link>http://trust.test/en/howyourhormonesmightbecontrollingyourmind/</link>
+<guid isPermaLink="true">http://trust.test/en/howyourhormonesmightbecontrollingyourmind/</guid>
+<atom:link href="http://trust.test/en/howyourhormonesmightbecontrollingyourmind/" rel="standout" />
 <description><![CDATA[Hormones play a vital part in keeping our bodies working properly. But they can also have a powerful – and sometimes negative – effect on our mood and mental health.
 
 We all like to think that our feelings and emotions are under our control, but ar...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761044292.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761044292.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 04:58:34 +0600</pubDate>
 <category>Technology</category>
 </item>
 <item>
 <title>A prize-winning transformation</title>
-<link>https://trustnews.press/en/aprizewinningtransformation/</link>
-<guid isPermaLink="true">https://trustnews.press/en/aprizewinningtransformation/</guid>
-<atom:link href="https://trustnews.press/en/aprizewinningtransformation/" rel="standout" />
+<link>http://trust.test/en/aprizewinningtransformation/</link>
+<guid isPermaLink="true">http://trust.test/en/aprizewinningtransformation/</guid>
+<atom:link href="http://trust.test/en/aprizewinningtransformation/" rel="standout" />
 <description><![CDATA["Favela upgrading" is the Brazilian government's attempt to integrate favelas into the formal city with public services and infrastructure and formalise land registration. But critics say these attempts can end up doing little to alleviate persistent...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761046231.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761046231.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:30:36 +0600</pubDate>
 <category>Environment</category>
 </item>
 <item>
 <title>&quot;The space today is marvellous and beautiful... It&#039;s really changed my life.&quot;</title>
-<link>https://trustnews.press/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/</link>
-<guid isPermaLink="true">https://trustnews.press/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/</guid>
-<atom:link href="https://trustnews.press/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/" rel="standout" />
+<link>http://trust.test/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/</link>
+<guid isPermaLink="true">http://trust.test/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/</guid>
+<atom:link href="http://trust.test/en/thespacetodayismarvellousandbeautifulitsreallychangedmylife/" rel="standout" />
 <description><![CDATA[When Batista Santos, a security guard originally from Bahia, moved to Vila Nova Esperança from a neighbouring community in 2014, he heard about the project but didn't immediately get involved. "I was working 12-hour days... and working in the garden...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761046326.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761046326.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:32:10 +0600</pubDate>
 <category>Environment</category>
 </item>
 <item>
 <title>84% of favela dwellings in São Paulo have no open space surrounding them at all</title>
-<link>https://trustnews.press/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/</link>
-<guid isPermaLink="true">https://trustnews.press/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/</guid>
-<atom:link href="https://trustnews.press/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/" rel="standout" />
+<link>http://trust.test/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/</link>
+<guid isPermaLink="true">http://trust.test/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/</guid>
+<atom:link href="http://trust.test/en/84offaveladwellingsinsãopaulohavenoopenspacesurroundingthematall/" rel="standout" />
 <description><![CDATA[Silva argues that people don't intend to degrade the environment but do it because they don't know any different or lack access to necessary waste collection services.
 
 In 2013, at a community meeting with over 200 residents a year after a court ha...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761046436.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761046436.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:34:00 +0600</pubDate>
 <category>Environment</category>
 </item>
 <item>
 <title>Why a Brazilian favela facing eviction decided to go green</title>
-<link>https://trustnews.press/en/whyabrazilianfavelafacingevictiondecidedtogogreen/</link>
-<guid isPermaLink="true">https://trustnews.press/en/whyabrazilianfavelafacingevictiondecidedtogogreen/</guid>
-<atom:link href="https://trustnews.press/en/whyabrazilianfavelafacingevictiondecidedtogogreen/" rel="standout" />
+<link>http://trust.test/en/whyabrazilianfavelafacingevictiondecidedtogogreen/</link>
+<guid isPermaLink="true">http://trust.test/en/whyabrazilianfavelafacingevictiondecidedtogogreen/</guid>
+<atom:link href="http://trust.test/en/whyabrazilianfavelafacingevictiondecidedtogogreen/" rel="standout" />
 <description><![CDATA[In Brazil's crowded favelas, green space is hard to come by, but this São Paulo community is showing how more sustainable favelas can give back to their residents.
 
 "You have to remove the seeds before they flower."
 
 Maria de Lourdes Andrade Silv...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761047101.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761047101.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:45:06 +0600</pubDate>
 <category>Environment</category>
 </item>
 <item>
 <title>Bangladesh garment factory fire kills at least 16</title>
-<link>https://trustnews.press/en/bangladeshgarmentfactoryfirekillsatleast16/</link>
-<guid isPermaLink="true">https://trustnews.press/en/bangladeshgarmentfactoryfirekillsatleast16/</guid>
-<atom:link href="https://trustnews.press/en/bangladeshgarmentfactoryfirekillsatleast16/" rel="standout" />
+<link>http://trust.test/en/bangladeshgarmentfactoryfirekillsatleast16/</link>
+<guid isPermaLink="true">http://trust.test/en/bangladeshgarmentfactoryfirekillsatleast16/</guid>
+<atom:link href="http://trust.test/en/bangladeshgarmentfactoryfirekillsatleast16/" rel="standout" />
 <description><![CDATA[At least 16 people have died after a huge fire broke out at a garment factory in Bangladesh, with officials warning that the toll could rise.
 
 Sixteen bodies have been recovered and would be handed to families after DNA testing, as they have been b...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761047606.jpg" length="0" type="image/jpeg" />
+<enclosure url="http://trust.test/storage/uploads/photo-library/large_1761047606.jpg" length="0" type="image/jpeg" />
 <dc:creator>Admin</dc:creator>
 <pubDate>Tue, 21 Oct 2025 05:53:30 +0600</pubDate>
-<category>National</category>
-</item>
-<item>
-<title>China seizes 60,000 maps over &#039;mislabelled&#039; Taiwan</title>
-<link>https://trustnews.press/en/china-seizes-60000-maps-over-mislabelled-taiwan/</link>
-<guid isPermaLink="true">https://trustnews.press/en/china-seizes-60000-maps-over-mislabelled-taiwan/</guid>
-<atom:link href="https://trustnews.press/en/china-seizes-60000-maps-over-mislabelled-taiwan/" rel="standout" />
-<description><![CDATA[Chinese customs officers in eastern Shandong province have seized 60,000 maps that "mislabelled" the self-governed island of Taiwan, which Beijing claims as part of its territory.
-
-The maps, authorities said, also "omitted important islands" in the...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761457264.jpg" length="0" type="image/jpeg" />
-<dc:creator>Admin</dc:creator>
-<pubDate>Sun, 26 Oct 2025 11:41:09 +0600</pubDate>
-<category>National</category>
-</item>
-<item>
-<title>Sia&#039;s ex demands $250,000 per month in spousal support</title>
-<link>https://trustnews.press/en/sias-ex-demands-250000-per-month-in-spousal-support/</link>
-<guid isPermaLink="true">https://trustnews.press/en/sias-ex-demands-250000-per-month-in-spousal-support/</guid>
-<atom:link href="https://trustnews.press/en/sias-ex-demands-250000-per-month-in-spousal-support/" rel="standout" />
-<description><![CDATA[The estranged husband of Australian singer Sia has asked for more than $250,000 (£187,000; A$384,000) per month in spousal support, according to US court documents.
-
-Best known for her hits including Chandelier and Titanium, the pop star - whose fu...]]></description>
-<enclosure url="https://trustnews.press/storage/uploads/photo-library/large_1761457383.jpg" length="0" type="image/jpeg" />
-<dc:creator>Admin</dc:creator>
-<pubDate>Sun, 26 Oct 2025 11:43:06 +0600</pubDate>
 <category>National</category>
 </item>
 </channel>

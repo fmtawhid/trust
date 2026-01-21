@@ -405,11 +405,11 @@
                 <div class="row form-group">
                     <div class="col-sm-12 col-md-12 col-xl-12">
                         <label for="image_alt"
-                            class="col-form-label fw-semibold">{{ localize_uc('image_alt') }}</label>
+                            class="col-form-label fw-semibold">{{ localize_uc('image_alt') }} <span class="text-danger">*</span></label>
                         <input type="text" id="image_alt" name="image_alt"
                             class="form-control @error('image_alt') is-invalid @enderror"
                             placeholder="{{ localize_uc('enter_image_alt') }}"
-                            value="{{ old('image_alt', $newsMst->image_alt ?? null) }}">
+                            value="{{ old('image_alt', $newsMst->image_alt ?? null) }}" required>
                         <div class="invalid-feedback error text-danger m-2">
                             @error('image_alt')
                             {{ $message }}
@@ -427,7 +427,7 @@
                         <input type="text" id="image_title" name="image_title"
                             class="form-control @error('image_title') is-invalid @enderror"
                             placeholder="{{ localize_uc('enter_image_title') }}"
-                            value="{{ old('image_title', $newsMst->image_title ?? null) }}">
+                            value="{{ old('image_title', $newsMst->image_title ?? null) }}" >
                         <div class="invalid-feedback error text-danger m-2">
                             @error('image_title')
                             {{ $message }}
@@ -461,11 +461,11 @@
                 <div class="row form-group">
                     <div class="col-sm-12 col-md-12 col-xl-12">
                         <label for="seo_title"
-                            class="col-form-label fw-semibold">{{ localize_uc('seo_title') }}</label>
+                            class="col-form-label fw-semibold">{{ localize_uc('seo_title') }} <span class="text-danger">*</span></label>
                         <input type="text" id="seo_title" name="seo_title"
                             class="form-control @error('seo_title') is-invalid @enderror"
                             placeholder="{{ localize_uc('enter_seo_title') }}"
-                            value="{{ old('seo_title', $newsMst->seo_title ?? null) }}">
+                            value="{{ old('seo_title', $newsMst->seo_title ?? null) }}" required>
                         <div class="invalid-feedback error text-danger m-2">
                             @error('seo_title')
                             {{ $message }}
@@ -583,12 +583,12 @@
                 <div class="row form-group">
                     <div class="col-sm-12 col-md-12 col-xl-12">
                         <label for="meta_keyword"
-                            class="col-form-label fw-semibold">{{ localize('meta_keyword') }}</label>
+                            class="col-form-label fw-semibold">{{ localize('meta_keyword') }} <span class="text-danger">*</span></label>
                         <input type="text" id="meta_keyword" name="meta_keyword"
                             class="form-control @error('reference') is-invalid @enderror"
                             value="{{ old('reference', $newsMst->postSeoOnpage->meta_keyword ?? null) }}"
                             placeholder="{{ localize_uc('keyword1') }},{{ localize_uc('keyword2') }}"
-                            data-role="tagsinput">
+                            data-role="tagsinput" required>
                         <div class="invalid-feedback error text-danger m-2">
                             @error('reference')
                             {{ $message }}
@@ -602,10 +602,10 @@
                 <div class="row form-group">
                     <div class="col-sm-12 col-md-12 col-xl-12">
                         <label for="meta_description"
-                            class="col-form-label fw-semibold">{{ localize_uc('meta_description') }}</label>
+                            class="col-form-label fw-semibold">{{ localize_uc('meta_description') }} <span class="text-danger">*</span></label>
                         <textarea name="meta_description" id="meta_description"
                             class="form-control @error('meta_description') is-invalid @enderror"
-                            placeholder="{{ localize_uc('enter_meta_description') }}" rows="3">{{ old('reference', $newsMst->postSeoOnpage->meta_description ?? null) }}</textarea>
+                            placeholder="{{ localize_uc('enter_meta_description') }}" rows="3" required>{{ old('reference', $newsMst->postSeoOnpage->meta_description ?? null) }}</textarea>
                         <div class="invalid-feedback error text-danger m-2">
                             @error('meta_description')
                             {{ $message }}

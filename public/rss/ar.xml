@@ -8,17 +8,17 @@
                 xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Trust News RSS Feed (ar)</title>
-<link>https://trustnews.press</link>
-<atom:link href="https://trustnews.press/rss/ar.xml" rel="self" type="application/rss+xml" />
+<link>http://trust.test</link>
+<atom:link href="http://trust.test/rss/ar.xml" rel="self" type="application/rss+xml" />
 <description>Latest news from Trust News (ar)</description>
 <language>ar</language>
 <copyright>Copyright 2026 Trust News</copyright>
-<lastBuildDate>Mon, 19 Jan 2026 12:53:10 +0600</lastBuildDate>
-<pubDate>Mon, 19 Jan 2026 12:53:10 +0600</pubDate>
+<lastBuildDate>Wed, 21 Jan 2026 10:24:56 +0600</lastBuildDate>
+<pubDate>Wed, 21 Jan 2026 10:24:56 +0600</pubDate>
 <image>
 <title>Trust News RSS Feed</title>
-<url>https://trustnews.press/storage/application/1756705274-logo.png</url>
-<link>https://trustnews.press</link>
+<url>http://trust.test/storage/application/1756705274-logo.png</url>
+<link>http://trust.test</link>
 </image>
 </channel>
 </rss>

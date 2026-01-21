@@ -132,7 +132,7 @@
                                 class="col-form-label fw-semibold">{{ localize_uc('image_alt') }}</label>
                             <input type="text" id="image_alt{{ $key }}" name="image_alt[]"
                                 class="form-control" placeholder="{{ localize_uc('enter_image_alt') }}"
-                                value="{{ $photoPostDetail->title }}">
+                                value="{{ $photoPostDetail->title }}" >
                             <div class="invalid-feedback error text-danger m-2">
                             </div>
                         </div>
